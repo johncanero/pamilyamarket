@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebookF } from "react-icons/fa";
+import { TiSocialInstagram } from "react-icons/ti";
 
 const Footer = () => {
     return (
@@ -12,9 +14,26 @@ const Footer = () => {
 
             <div className="mx-7 md:mx-24 lg:mx-60 mt-4 mb-24 flex justify-between">
                 <p className="text-xl md:text-3xl font-bold tracking-tighter text-white">Follow Pamilya Market</p>
-                {/* Icons */}
-                {/* All rights reserved */}
+                <div className="flex gap-x-4 md:gap-x-5">
+                    <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.facebook.com/pamilyamarketph"
+                    >
+                        <FaFacebookF size={24} className="text-white" />
+                    </Link>
+
+                    <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.instagram.com/pamilyamarket/"
+                    >
+                        <TiSocialInstagram size={28} className="text-white" />
+                    </Link>
+                </div>
             </div>
+
+            {/* All rights reserved */}
             <footer className="my-4 text-sm text-center text-white md:block">
                 <Link
                     target="_blank"
