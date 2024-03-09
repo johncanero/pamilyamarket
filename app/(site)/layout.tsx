@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+
 const SiteLayout = ({
     children
 }: {
@@ -10,7 +12,7 @@ const SiteLayout = ({
                 <div className="flex-grow mx-auto">
                     {children}
                 </div>
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </>
     );
