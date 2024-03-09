@@ -9,7 +9,7 @@ export default function Home() {
           width={350}
           height={350}
           alt="pamilya-market-logo"
-          className="mx-auto mt-52 max-w-xs md:max-w-full"
+          className="mx-auto lg:mt-48 mt-44 max-w-xs md:max-w-full"
         />
       </div>
     </div>
