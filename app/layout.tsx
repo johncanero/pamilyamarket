@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pamilya Market",
+  title: "Home | Pamilya Market",
   description: "Fairview's freshest! Nourish your family with quality meats, fish, veggies & more.",
   icons: {
     icon: '/images/logo/pamilyaMarketLogo.png',
