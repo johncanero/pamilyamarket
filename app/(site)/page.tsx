@@ -2,14 +2,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
+      <div >
         <Image
           src="/images/logo/pamilyaMarketLogo.png"
-          width={250}
-          height={250}
+          width={350}
+          height={350}
           alt="pamilya-market-logo"
-          className="mx-auto"
+          className="mx-auto mt-52 max-w-xs md:max-w-full"
         />
+      </div>
     </div>
   );
 }
