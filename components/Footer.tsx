@@ -20,7 +20,7 @@ const Footer = () => {
                         rel="noopener noreferrer"
                         href="https://www.facebook.com/pamilyamarketph"
                     >
-                        <FaFacebookF size={24} className="text-white" />
+                        <FaFacebookF size={24} className="text-white hover:text-opacity-70" />
                     </Link>
 
                     <Link
@@ -28,7 +28,7 @@ const Footer = () => {
                         rel="noopener noreferrer"
                         href="https://www.instagram.com/pamilyamarket/"
                     >
-                        <TiSocialInstagram size={28} className="text-white" />
+                        <TiSocialInstagram size={28} className="text-white hover:text-opacity-70" />
                     </Link>
                 </div>
             </div>
