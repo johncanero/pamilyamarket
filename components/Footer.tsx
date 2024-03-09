@@ -15,7 +15,7 @@ const Footer = () => {
                         Pamilya Market 
                     </span>
                 </Link> 
-                &copy; {new Date().getFullYear()} All Rights Reserved
+                &copy; {new Date().getFullYear()} All rights reserved.
             </footer>
         </div>
     );
