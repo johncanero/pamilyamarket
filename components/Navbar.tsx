@@ -1,10 +1,17 @@
 import React from 'react'
-import { NavbarMenu } from './NavbarMenu'
+import { NavbarTabs } from './NavbarTabs'
+import NavbarMenu from './NavbarMenu'
 
 const Navbar = () => {
   return (
-    <div className='bg-orange-300 py-2'>
-      <NavbarMenu />
+    <div>
+      <div className='bg-orange-300 py-2 '>
+        <NavbarTabs />
+      </div>
+
+      <div>
+        <NavbarMenu />
+      </div>
     </div>
   )
 }
