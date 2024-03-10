@@ -41,7 +41,7 @@ export function NavbarTabs() {
             </Tabs>
 
             <div className="hidden lg:block mt-3">
-                <p>
+                <p className="italic">
                     <span className="font-bold">Fairview's freshest! ‍</span>
                     Nourish your family with quality meats, fish, veggies & more.
                 </p>
