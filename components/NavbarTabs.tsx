@@ -16,7 +16,7 @@ import SheetMobileTablet from "./SheetMobileTablet";
 export function NavbarTabs() {
     return (
         <div className="flex justify-between mx-8 md:mx-16">
-            <Tabs defaultValue="home" className="w-[220px] md:w-[300px]">
+            <Tabs defaultValue="home" className="hidden lg:block md:w-[300px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
                     <Link href="/">
                         <TabsTrigger value="home">
@@ -43,6 +43,26 @@ export function NavbarTabs() {
                     </Link>
                 </TabsList>
             </Tabs>
+
+            <Link
+                href="/"
+            >
+                <div className="lg:hidden flex gap-x-1">
+                    <Image
+                        src="/images/logo/pamilyaMarketLogo.png"
+                        width={44}
+                        height={44}
+                        alt="pamilya-market-logo"
+                    />
+                    <Image
+                        src="/images/logo/pamilyaMarketText.png"
+                        width={100}
+                        height={100}
+                        alt="pamilya-market-logo"
+                        className="w-24 mt-1"
+                    />
+                </div>
+            </Link>
 
             {/* Pamilya Market - Taglline (lg) */}
             <div className="hidden lg:block">
