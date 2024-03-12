@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/tabs-pamilya"
 
 import { MapPinned } from 'lucide-react';
+import { BsMessenger } from "react-icons/bs";
 
 export function NavbarTabs() {
     return (
@@ -17,12 +18,13 @@ export function NavbarTabs() {
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
                     <Link href="/">
                         <TabsTrigger value="home">
-                            <div className="flex">
+                            <div className="flex md:gap-x-1">
                                 <Image
                                     src="/images/logo/pamilyaMarketLogoBlack.png"
-                                    width={25}
-                                    height={25}
+                                    width={32}
+                                    height={32}
                                     alt="pamilya-market-logo-black"
+                                    className="w-7 md:w-8"
                                 />
                                 <p className="md:text-base text-sm">Pamilya</p>
                             </div>
@@ -40,11 +42,21 @@ export function NavbarTabs() {
                 </TabsList>
             </Tabs>
 
-            <div className="hidden lg:block mt-3">
-                <p className="italic">
-                    <span className="font-bold">Fairview's freshest! ‍</span>
-                    Nourish your family with quality meats, fish, veggies & more.
-                </p>
+            {/* Pamilya Market - Taglline (lg) */}
+            <div className="hidden lg:block">
+                <div className="flex gap-x-4">
+                    <p className="italic mt-3">
+                        <span className="font-bold">Fairview's freshest! ‍</span>
+                        Nourish your family with quality meats, fish, veggies & more.
+                    </p>
+                    <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://m.me/pamilyamarketph"
+                    >
+                        <BsMessenger size={24} className="mt-2 text-amber-700 hover:text-amber-800" />
+                    </Link>
+                </div>
             </div>
         </div>
     )
