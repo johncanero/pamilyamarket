@@ -15,9 +15,9 @@ const NavbarMenu = () => {
                     animate={{ opacity: 1 }}
                 >
                     <Image
-                        src="/images/logo/pamilyaMarketText.png"
-                        width={120}
-                        height={120}
+                        src="/images/logo/pamilyaMarketTextwithLogo.png"
+                        width={132}
+                        height={132}
                         alt="pamilya-market-logo-text"
                     />
                 </motion.div>

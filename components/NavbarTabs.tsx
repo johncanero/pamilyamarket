@@ -49,17 +49,10 @@ export function NavbarTabs() {
             >
                 <div className="lg:hidden flex gap-x-1">
                     <Image
-                        src="/images/logo/pamilyaMarketLogo.png"
-                        width={44}
-                        height={44}
+                        src="/images/logo/pamilyaMarketTextwithLogo.png"
+                        width={160}
+                        height={160}
                         alt="pamilya-market-logo"
-                    />
-                    <Image
-                        src="/images/logo/pamilyaMarketText.png"
-                        width={100}
-                        height={100}
-                        alt="pamilya-market-logo"
-                        className="w-24 mt-1"
                     />
                 </div>
             </Link>
