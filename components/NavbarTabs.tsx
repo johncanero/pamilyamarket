@@ -23,8 +23,8 @@ export function NavbarTabs() {
                             <div className="flex md:gap-x-1">
                                 <Image
                                     src="/images/logo/pamilyaMarketLogoBlack.png"
-                                    width={32}
-                                    height={32}
+                                    width={24}
+                                    height={24}
                                     alt="pamilya-market-logo-black"
                                     className="w-7 md:w-8"
                                 />
@@ -36,7 +36,7 @@ export function NavbarTabs() {
                     <Link href="/location">
                         <TabsTrigger value="location">
                             <div className="flex gap-x-1">
-                                <MapPinned size={18} className="md:mt-1 text-zinc-800" />
+                                <MapPinned size={20} className="md:mt-1 text-amber-700" />
                                 <p className="md:text-base text-sm">Location</p>
                             </div>
                         </TabsTrigger>
@@ -56,7 +56,7 @@ export function NavbarTabs() {
                         rel="noopener noreferrer"
                         href="http://m.me/pamilyamarketph"
                     >
-                        <BsMessenger size={24} className="mt-2 text-amber-700 hover:text-amber-800" />
+                        <BsMessenger size={20} className="mt-2 text-amber-700 hover:text-amber-800" />
                     </Link>
                 </div>
             </div>
