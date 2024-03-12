@@ -16,13 +16,53 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
-          <Image
-              src="/images/location/post1-location-compressed.png"
-              width={600}
-              height={600}
-              alt="pamilya-market-location"
-              className="mx-auto max-w-xs my-16 md:max-w-full rounded-3xl"
-          />
+      {/* Location Post */}
+      <Image
+        src="/images/location/post1-location-compressed.png"
+        width={600}
+        height={600}
+        alt="pamilya-market-location"
+        className="mx-auto max-w-xs my-14 md:max-w-lg lg:max-w-full rounded-2xl lg:rounded-3xl"
+      />
+
+      {/* Google Images */}
+      <div className='md:flex md:flex-wrap my-14 mx-8'>
+        <Image
+          src="/images/location/post3-streetView1-compressed.png"
+          width={600}
+          height={600}
+          alt="pamilya-market-location"
+          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+        />
+        <Image
+          src="/images/location/post3-streetView2-compressed.png"
+          width={600}
+          height={600}
+          alt="pamilya-market-location"
+          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+        />
+        <Image
+          src="/images/location/post3-streetView3-compressed.png"
+          width={600}
+          height={600}
+          alt="pamilya-market-location"
+          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+        />
+        <Image
+          src="/images/location/post3-streetView4-compressed.png"
+          width={600}
+          height={600}
+          alt="pamilya-market-location"
+          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+        />
+        {/* <Image
+          src="/images/location/post3-streetView5-compressed.png"
+          width={600}
+          height={600}
+          alt="pamilya-market-location"
+          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+        /> */}
+      </div>
     </div>
   )
 }
