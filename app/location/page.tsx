@@ -1,5 +1,17 @@
 import React from 'react'
+import type { Metadata } from "next";
 import Image from 'next/image'
+
+
+export const metadata: Metadata = {
+  title: "Location | Pamilya Market",
+  description: "Fairview's freshest! Nourish your family with quality meats, fish, veggies & more.",
+  icons: {
+    icon: '/images/logo/pamilyaMarketLogo.png',
+    shortcut: '/images/logo/pamilyaMarketLogo.png',
+  },
+};
+
 
 const page = () => {
   return (
