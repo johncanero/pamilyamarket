@@ -14,7 +14,7 @@ import { BsMessenger } from "react-icons/bs";
 export function NavbarTabs() {
     return (
         <div className="flex justify-between mx-8 md:mx-16">
-            <Tabs defaultValue="home" className="w-[200px] md:w-[300px]">
+            <Tabs defaultValue="home" className="w-[220px] md:w-[300px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
                     <Link href="/">
                         <TabsTrigger value="home">
@@ -55,6 +55,19 @@ export function NavbarTabs() {
                         href="http://m.me/pamilyamarketph"
                     >
                         <BsMessenger size={24} className="mt-2 text-amber-700 hover:text-amber-800" />
+                    </Link>
+                </div>
+            </div>
+
+            {/* Pamilya Market - Taglline (sm-md) */}
+            <div className="lg:hidden">
+                <div className="flex">
+                    <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://m.me/pamilyamarketph"
+                    >
+                        <BsMessenger size={28} className="mt-2 text-amber-700 hover:text-amber-800" />
                     </Link>
                 </div>
             </div>
