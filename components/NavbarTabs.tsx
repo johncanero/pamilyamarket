@@ -31,7 +31,7 @@ export function NavbarTabs() {
                         </TabsTrigger>
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/location">
                         <TabsTrigger value="location">
                             <div className="flex gap-x-1">
                                 <MapPinned size={18} className="md:mt-1 text-zinc-800" />
