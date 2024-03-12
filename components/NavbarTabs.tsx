@@ -11,6 +11,8 @@ import {
 import { MapPinned } from 'lucide-react';
 import { BsMessenger } from "react-icons/bs";
 
+import SheetMobileTablet from "./SheetMobileTablet";
+
 export function NavbarTabs() {
     return (
         <div className="flex justify-between mx-8 md:mx-16">
@@ -61,7 +63,7 @@ export function NavbarTabs() {
 
             {/* Pamilya Market - Taglline (sm-md) */}
             <div className="lg:hidden">
-                <div className="flex">
+                <div className="flex gap-x-3">
                     <Link
                         target="_blank"
                         rel="noopener noreferrer"
@@ -69,6 +71,8 @@ export function NavbarTabs() {
                     >
                         <BsMessenger size={24} className="mt-3 text-amber-700 hover:text-amber-800" />
                     </Link>
+
+                    <SheetMobileTablet />
                 </div>
             </div>
         </div>
