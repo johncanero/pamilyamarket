@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import {
@@ -12,6 +14,8 @@ import { MapPinned } from 'lucide-react';
 import { BsMessenger } from "react-icons/bs";
 
 import SheetMobileTablet from "./SheetMobileTablet";
+
+import { motion } from "framer-motion"
 
 export function NavbarTabs() {
     return (
@@ -47,14 +51,17 @@ export function NavbarTabs() {
             <Link
                 href="/"
             >
-                <div className="lg:hidden flex gap-x-1">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="lg:hidden flex gap-x-1">
                     <Image
                         src="/images/logo/pamilyaMarketTextwithLogo.png"
                         width={128}
                         height={128}
                         alt="pamilya-market-logo"
                     />
-                </div>
+                </motion.div>
             </Link>
 
             {/* Pamilya Market - Taglline (lg) */}
