@@ -20,18 +20,18 @@ import { motion } from "framer-motion"
 export function NavbarTabs() {
     return (
         <div className="flex justify-between mx-8 md:mx-16">
-            <Tabs defaultValue="home" className="hidden lg:block md:w-[300px]">
+            <Tabs defaultValue="home" className="hidden lg:block md:w-[240px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
                     <Link href="/">
                         <TabsTrigger value="home">
                             <div className="flex md:gap-x-1">
-                                <Image
+                                {/* <Image
                                     src="/images/logo/pamilyaMarketLogoBlack.png"
                                     width={24}
                                     height={24}
                                     alt="pamilya-market-logo-black"
                                     className="w-7 md:w-8"
-                                />
+                                /> */}
                                 <p className="md:text-base text-sm">Pamilya</p>
                             </div>
                         </TabsTrigger>
@@ -40,7 +40,7 @@ export function NavbarTabs() {
                     <Link href="/location">
                         <TabsTrigger value="location">
                             <div className="flex gap-x-1">
-                                <MapPinned size={20} className="md:mt-1 text-amber-700" />
+                                {/* <MapPinned size={20} className="md:mt-1 text-amber-700" /> */}
                                 <p className="md:text-base text-sm">Location</p>
                             </div>
                         </TabsTrigger>
