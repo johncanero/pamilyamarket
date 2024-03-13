@@ -19,6 +19,7 @@ import { IoIosMenu } from "react-icons/io";
 import { TiHome } from "react-icons/ti";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsMessenger } from "react-icons/bs";
+import { MdSpaceDashboard } from "react-icons/md";
 
 import { motion } from "framer-motion"
 
@@ -85,6 +86,17 @@ const SheetMobileTablet = () => {
                                     <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
                                         <FaLocationDot size={16} className='ml-1 mt-1 text-amber-600' />
                                         <p className='text-lg'>Location</p>
+                                    </div>
+                                </SheetPrimitive.Close>
+                            </Link>
+
+                            <Link
+                                href="/blueprint"
+                            >
+                                <SheetPrimitive.Close>
+                                    <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
+                                        <MdSpaceDashboard size={16} className='ml-1 mt-1 text-amber-600' />
+                                        <p className='text-lg'>Blueprint</p>
                                     </div>
                                 </SheetPrimitive.Close>
                             </Link>

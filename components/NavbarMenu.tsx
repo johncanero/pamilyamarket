@@ -10,17 +10,30 @@ const NavbarMenu = () => {
     return (
         <div className='hidden lg:block'>
             <div className='md:flex md:justify-between lg:mx-16 md:py-6 hidden'>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                >
-                    <Image
-                        src="/images/logo/pamilyaMarketTextwithLogo.png"
-                        width={132}
-                        height={132}
-                        alt="pamilya-market-logo-text"
-                    />
-                </motion.div>
+                <div className='flex'>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                    >
+                        <Image
+                            src="/images/logo/pamilyaMarketTextwithLogo.png"
+                            width={132}
+                            height={132}
+                            alt="pamilya-market-logo-text"
+                        />
+                    </motion.div>
+
+                    <div className='mt-1 ml-10'>
+                        <Link
+                            rel="noopener noreferrer"
+                            href="/blueprint"
+                        >
+                            <p className="text-amber-600">Blueprint</p>
+                        </Link>
+                    </div>
+                </div>
+
+
 
                 <div className='mt-1'>
                     <Link
