@@ -24,7 +24,7 @@ const SheetMobileTablet = () => {
     return (
         <Sheet>
             <SheetTrigger>
-                <IoMenu size={30} className='mt-2 text-zinc-800 hover:text-zinc-900' />
+                <IoMenu size={30} className='mt-2 text-zinc-800 hover:text-amber-800' />
             </SheetTrigger>
             <SheetContent>
                 <SheetHeader>

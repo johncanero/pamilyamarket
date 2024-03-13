@@ -50,8 +50,8 @@ export function NavbarTabs() {
                 <div className="lg:hidden flex gap-x-1">
                     <Image
                         src="/images/logo/pamilyaMarketTextwithLogo.png"
-                        width={160}
-                        height={160}
+                        width={140}
+                        height={140}
                         alt="pamilya-market-logo"
                     />
                 </div>
@@ -76,7 +76,7 @@ export function NavbarTabs() {
 
             {/* Pamilya Market - Taglline (sm-md) */}
             <div className="lg:hidden">
-                <div className="flex gap-x-3">
+                <div className="flex gap-x-4">
                     <Link
                         target="_blank"
                         rel="noopener noreferrer"
