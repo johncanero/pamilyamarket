@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import React from 'react'
@@ -18,6 +19,8 @@ import { IoIosMenu } from "react-icons/io";
 import { TiHome } from "react-icons/ti";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsMessenger } from "react-icons/bs";
+
+import { motion } from "framer-motion"
 
 const SheetClose = SheetPrimitive.Close
 
@@ -108,6 +111,25 @@ const SheetMobileTablet = () => {
                                 </Link>
                             </SheetPrimitive.Close>
                         </div>
+                    </SheetDescription>
+
+
+                    <SheetDescription>
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                            variants={{
+                                visible: { opacity: 1, scale: 1 },
+                                hidden: { opacity: 0, scale: 0 }
+                            }}
+                        >
+                            <p className="italic mt-12 text-black">
+                                <span className="font-bold">Fairview's freshest! ‍</span>
+                                Nourish your family with quality meats, fish, veggies & more.
+                            </p>
+                        </motion.div>
                     </SheetDescription>
                 </div>
             </SheetContent>
