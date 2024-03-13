@@ -82,7 +82,7 @@ export function NavbarTabs() {
                         rel="noopener noreferrer"
                         href="http://m.me/pamilyamarketph"
                     >
-                        <BsMessenger size={24} className="mt-3 text-amber-700 hover:text-amber-800" />
+                        {/* <BsMessenger size={24} className="mt-3 text-amber-700 hover:text-amber-800" /> */}
                     </Link>
 
                     <SheetMobileTablet />
