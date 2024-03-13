@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from "next";
 import Image from 'next/image'
+import { LocationMap } from '@/components/LocationMap';
 
 
 export const metadata: Metadata = {
@@ -27,14 +28,8 @@ const page = () => {
 
 
       {/* Google Pin  */}
-      <div className='md:flex md:flex-wrap my-14 mx-8'>        
-        <Image
-          src="/images/location/post2-vicinityMap-compressed.png"
-          width={1550}
-          height={1550}
-          alt="pamilya-market-location"
-          className="mx-auto max-w-xs my-7 md:max-w-2xl lg:max-w-full rounded-2xl lg:rounded-3xl"
-        />
+      <div className='flex justify-center my-14 mx-8'>        
+        <LocationMap />
       </div>
 
       {/* Google Images */}
