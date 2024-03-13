@@ -50,8 +50,8 @@ export function NavbarTabs() {
                 <div className="lg:hidden flex gap-x-1">
                     <Image
                         src="/images/logo/pamilyaMarketTextwithLogo.png"
-                        width={140}
-                        height={140}
+                        width={128}
+                        height={128}
                         alt="pamilya-market-logo"
                     />
                 </div>
@@ -69,7 +69,7 @@ export function NavbarTabs() {
                         rel="noopener noreferrer"
                         href="http://m.me/pamilyamarketph"
                     >
-                        <BsMessenger size={20} className="mt-2 text-amber-700 hover:text-amber-800" />
+                        <BsMessenger size={25} className="mt-2 text-amber-700 hover:text-amber-800" />
                     </Link>
                 </div>
             </div>

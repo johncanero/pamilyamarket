@@ -53,14 +53,14 @@ const SheetMobileTablet = () => {
                         <hr></hr>
                     </SheetDescription>
                     <SheetDescription>
-                        <p className='my-3 text-lg'>Menu</p>
+                        <p className='my-3 mx-3 text-lg'>Menu</p>
                         <div>
                             <Link
                                 href="/"
                         
                             >
                                 <SheetPrimitive.Close>
-                                    <div className='grid grid-cols-7 py-3 hover:bg-orange-200 hover:rounded-xl'>
+                                    <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
                                         <TiHome size={24} className='text-amber-600' />
                                         <p className='text-lg'>Home</p>
                                     </div>
@@ -71,7 +71,7 @@ const SheetMobileTablet = () => {
                                 href="/location"
                             >
                                 <SheetPrimitive.Close>
-                                    <div className='grid grid-cols-7 py-3 hover:bg-orange-200 hover:rounded-xl'>
+                                    <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
                                         <FaLocationDot size={16} className='ml-1 mt-1 text-amber-600' />
                                         <p className='text-lg'>Location</p>
                                     </div>
