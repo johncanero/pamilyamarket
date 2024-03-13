@@ -125,7 +125,7 @@ const SheetMobileTablet = () => {
                                 hidden: { opacity: 0, scale: 0 }
                             }}
                         >
-                            <p className="italic mt-12 text-black">
+                            <p className="italic mt-12 text-black px-3">
                                 <span className="font-bold">Fairview's freshest! ‍</span>
                                 Nourish your family with quality meats, fish, veggies & more.
                             </p>
