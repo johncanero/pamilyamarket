@@ -26,7 +26,7 @@ const page = () => {
         className="mx-auto max-w-xs my-14 md:max-w-lg lg:max-w-full rounded-2xl lg:rounded-3xl"
       />
 
-      {/* Street View Images */}
+      {/* Vicinity Map Images */}
       <div className="overflow-hidden rounded-md">
         <Image
           src="/images/location/post2-vicinityMap-compressed.png"
