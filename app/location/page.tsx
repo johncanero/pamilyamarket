@@ -26,9 +26,27 @@ const page = () => {
         className="mx-auto max-w-xs my-14 md:max-w-lg lg:max-w-full rounded-2xl lg:rounded-3xl"
       />
 
+      {/* Street View Images */}
+      <div className="overflow-hidden rounded-md">
+        <Image
+          src="/images/location/post2-vicinityMap-compressed.png"
+          width={350}
+          height={350}
+          alt="pamilya-market-location"
+          className="rounded-2xl mx-auto md:hidden lg:rounded-3xl"
+        />
+
+        <Image
+          src="/images/location/post2-vicinityMap-compressed.png"
+          width={550}
+          height={550}
+          alt="pamilya-market-location"
+          className="rounded-2xl mx-auto hidden md:block lg:hidden lg:rounded-3xl"
+        />
+      </div>
 
       {/* Google Pin  */}
-      <div className='flex justify-center my-14 mx-8'>        
+      <div className='flex justify-center mt-7 mb-14 mx-8'>        
         <LocationMap />
       </div>
 
