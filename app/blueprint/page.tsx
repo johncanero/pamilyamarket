@@ -27,7 +27,6 @@ const page = () => {
                   className="rounded-2xl mx-auto md:hidden"
               />
           </div>
-
           <FloorPlan />
       </div>
   )

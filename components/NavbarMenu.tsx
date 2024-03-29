@@ -15,12 +15,17 @@ const NavbarMenu = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                     >
-                        <Image
-                            src="/images/logo/pamilyaMarketTextwithLogo.png"
-                            width={132}
-                            height={132}
-                            alt="pamilya-market-logo-text"
-                        />
+                        <Link
+                            rel="noopener noreferrer"
+                            href="/"
+                        >
+                            <Image
+                                src="/images/logo/pamilyaMarketTextwithLogo.png"
+                                width={132}
+                                height={132}
+                                alt="pamilya-market-logo-text"
+                            />
+                        </Link>
                     </motion.div>
 
                     <div className='mt-1 ml-10'>
@@ -29,6 +34,16 @@ const NavbarMenu = () => {
                             href="/blueprint"
                         >
                             <p className="text-amber-600">Blueprint</p>
+                        </Link>
+                    </div>
+
+
+                    <div className='mt-1 ml-8'>
+                        <Link
+                            rel="noopener noreferrer"
+                            href="/registration"
+                        >
+                            <p className="text-amber-600">Registration</p>
                         </Link>
                     </div>
                 </div>
