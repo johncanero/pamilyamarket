@@ -51,7 +51,7 @@ const page = () => {
       </div>
 
       {/* Google Images */}
-      <div className='md:flex md:flex-wrap my-14 mx-8'>
+      <div className='md:flex md:flex-wrap my-14 mx-8 lg:mx-32'>
         <Image
           src="/images/location/post3-streetView1-compressed.png"
           width={600}
