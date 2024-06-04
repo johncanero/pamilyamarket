@@ -17,7 +17,8 @@
           "@layer"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   },
   "browserslist": [
     "defaults",
