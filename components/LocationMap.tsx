@@ -10,8 +10,8 @@ export function LocationMap() {
                 <div className="overflow-hidden rounded-md">
                     <Image
                         src="/images/location/post2-vicinityMap-compressed.png"
-                        width={1550}
-                        height={1550}
+                        width={1400}
+                        height={1400}
                         alt="pamilya-market-location"
                         className="mx-auto my-7 rounded-2xl lg:rounded-3xl"
                     />

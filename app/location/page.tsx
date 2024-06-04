@@ -26,7 +26,7 @@ const page = () => {
         className="mx-auto max-w-xs my-14 md:max-w-lg lg:max-w-full rounded-2xl lg:rounded-3xl"
       />
 
-      {/* Vicinity Map Images */}
+      {/* Vicinity Map */}
       <div className="overflow-hidden rounded-md">
         <Image
           src="/images/location/post2-vicinityMap-compressed.png"
@@ -44,41 +44,40 @@ const page = () => {
           className="rounded-2xl mx-auto hidden md:block lg:hidden lg:rounded-3xl"
         />
       </div>
-
       {/* Google Pin  */}
       <div className='flex justify-center mt-7 mb-14 mx-8'>        
         <LocationMap />
       </div>
 
       {/* Google Images */}
-      <div className='md:flex md:flex-wrap my-14 mx-8 lg:mx-32'>
+      <div className='md:flex md:flex-wrap mb-16 mx-8 lg:mx-24'>
         <Image
           src="/images/location/post3-streetView1-compressed.png"
-          width={600}
-          height={600}
+          width={500}
+          height={500}
           alt="pamilya-market-location"
-          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+          className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
         />
         <Image
           src="/images/location/post3-streetView2-compressed.png"
-          width={600}
-          height={600}
+          width={500}
+          height={500}
           alt="pamilya-market-location"
-          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+          className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
         />
         <Image
           src="/images/location/post3-streetView3-compressed.png"
-          width={600}
-          height={600}
+          width={500}
+          height={500}
           alt="pamilya-market-location"
-          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+          className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
         />
         <Image
           src="/images/location/post3-streetView4-compressed.png"
-          width={600}
-          height={600}
+          width={500}
+          height={500}
           alt="pamilya-market-location"
-          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
+          className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
         />
         {/* <Image
           src="/images/location/post3-streetView5-compressed.png"
