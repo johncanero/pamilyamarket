@@ -15,21 +15,25 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return (
-      <div className="flex flex-col min-h-screen">
-          {/* Floor Plan*/}
-          <div className="overflow-hidden rounded-md md:my-0 my-7 lg:my-0">
-              <Image
-                  src="/images/blueprint/pamilyaMarketFloorPlan-compressed.png"
-                  width={300}
-                  height={300}
-                  alt="pamilya-market-location"
-                  className="rounded-2xl mx-auto md:hidden"
-              />
-          </div>
-          <FloorPlan />
-      </div>
-  )
+    return (
+        <div>
+            <div className="flex flex-col">
+                {/* Floor Plan - Mobile*/}
+                <div className="overflow-hidden rounded-md md:my-0 my-7 lg:my-0">
+                    <Image
+                        src="/images/blueprint/pamilyaMarketFloorPlan-compressed.png"
+                        width={300}
+                        height={300}
+                        alt="pamilya-market-location"
+                        className="rounded-2xl mx-auto md:hidden"
+                    />
+                </div>
+
+                {/* Floor Plan */}
+                <FloorPlan />
+            </div>
+        </div>
+    )
 }
 
 export default page

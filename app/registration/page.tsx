@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const page = () => {
     return (
         <div className="flex flex-col min-h-screen">
-            {/* Floor Plan*/}
+            {/* DTI Registration */}
             <div className="overflow-hidden rounded-md md:my-0 my-7 lg:my-0">
                 <Image
                     src="/images/registration/pamilyaMarketDTIRegistrationWebsite-compressed.png"

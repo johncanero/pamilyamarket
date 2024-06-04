@@ -28,6 +28,7 @@ const NavbarMenu = () => {
                         </Link>
                     </motion.div>
 
+                    {/* Blueprint */}
                     <div className='mt-1 ml-10'>
                         <Link
                             rel="noopener noreferrer"
@@ -37,7 +38,18 @@ const NavbarMenu = () => {
                         </Link>
                     </div>
 
+                    {/* Design */}
+                    <div className='mt-1 ml-10'>
+                        <Link
+                            rel="noopener noreferrer"
+                            href="/design"
+                        >
+                            <p className="text-amber-600">Design</p>
+                        </Link>
+                    </div>
 
+
+                    {/* Registration */}
                     <div className='mt-1 ml-8'>
                         <Link
                             rel="noopener noreferrer"
@@ -49,7 +61,7 @@ const NavbarMenu = () => {
                 </div>
 
 
-
+                {/* Visit Pamilya */}
                 <div className='mt-1'>
                     <Link
                         target="_blank"
