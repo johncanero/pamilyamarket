@@ -76,7 +76,7 @@ export default function Home() {
               href="/registration"
             >
               <Image
-                src="/images/home/card01dtiRegistartion.png"
+                src="/images/home/card01dtiRegistartion-compressed.png"
                 width={1600}
                 height={1600}
                 alt="dti-registartion"
