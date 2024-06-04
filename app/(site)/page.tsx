@@ -87,7 +87,6 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* Floor Plan */}
       <div className="p-5 md:p-10 antialiased ">
         <div
@@ -145,7 +144,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-  
     </div >
   );
 }
