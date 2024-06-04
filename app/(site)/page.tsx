@@ -30,10 +30,10 @@ export default function Home() {
       </motion.div>
       
       {/* DTI Registration */}
-      <div className="my-8 lg:my-16 p-10 md:p-20 antialiased ">
+      <div className="p-5 md:p-10 antialiased ">
         <div
           className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-          <div className="max-w-m6">
+          <div>
             {/* Description */}
             <div className="p-5 pb-10">
               <h1 className="text-xl font-semibold text-gray-800 mt-4">
@@ -76,7 +76,7 @@ export default function Home() {
               href="/registration"
             >
               <Image
-                src="/images/home/card01dtiRegistartion-compressed.png"
+                src="/images/home/card01dtiRegistartion.png"
                 width={1600}
                 height={1600}
                 alt="dti-registartion"
@@ -86,6 +86,66 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+      {/* Floor Plan */}
+      <div className="p-5 md:p-10 antialiased ">
+        <div
+          className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
+          <div>
+            {/* Description */}
+            <div className="p-5 pb-10">
+              <h1 className="text-xl font-semibold text-gray-800 mt-4">
+                Blueprint - Floor Plan
+              </h1>
+              <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
+                Located in Fairview, Quezon City, NCR - National Capital Region, Second District
+              </p>
+            </div>
+
+            {/* Pamilya Market - logo */}
+            <div className="flex justify-center">
+              <Image
+                src="/images/home/pamilyaMarketLogo.png"
+                width={200}
+                height={200}
+                alt="pamilya-market-logo"
+                className="rounded-2xl hidden lg:block"
+              />
+            </div>
+
+            {/* Button */}
+            <div className="flex justify-center mt-4 mb-8">
+              <Link
+                // target="_blank"
+                rel="noopener noreferrer"
+                href="/blueprint"
+              >
+                <Button className="text-lg rounded-full py-8 px-16 font-semibold">Navigate Floor Plan</Button>
+              </Link>
+            </div>
+          </div>
+
+
+          {/* Floor Plan */}
+          <div className="cursor-pointer">
+            <Link
+              // target="_blank"
+              rel="noopener noreferrer"
+              href="/blueprint"
+            >
+              <Image
+                src="/images/home/card02floorPlan.png"
+                width={1600}
+                height={1600}
+                alt="blueprint"
+                className="rounded-2xl hidden lg:block"
+              />
+            </Link>
+          </div>
+        </div>
+      </div>
+  
     </div >
   );
 }
