@@ -30,7 +30,7 @@ export default function Home() {
       </motion.div>
       
       {/* DTI Registration */}
-      <div className="mt-8 lg:mt-16 p-10 md:p-20 antialiased ">
+      <div className="my-8 lg:my-16 p-10 md:p-20 antialiased ">
         <div
           className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
           <div className="max-w-m6">
