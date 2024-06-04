@@ -33,7 +33,7 @@ export default function Home() {
       <div className="p-5 md:p-10 antialiased ">
         <div
           className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-          <div>
+          <div className="w-6/12">
             {/* Description */}
             <div className="p-5 pb-10">
               <h1 className="text-xl font-semibold text-gray-800 mt-4">
@@ -91,14 +91,14 @@ export default function Home() {
       <div className="p-5 md:p-10 antialiased ">
         <div
           className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-          <div>
+          <div className="w-6/12">
             {/* Description */}
             <div className="p-5 pb-10">
               <h1 className="text-xl font-semibold text-gray-800 mt-4">
                 Blueprint - Floor Plan
               </h1>
               <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
-                Located in Fairview, Quezon City, NCR - National Capital Region, Second District
+                Discover and navigate the spaces and areas of Pamilya Market
               </p>
             </div>
 
