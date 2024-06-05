@@ -29,12 +29,13 @@ export default function Home() {
         />
       </motion.div>
 
+      {/* Cards */}
       <div className="mb-12">
         {/* Location */}
         <div className="p-5 md:p-10 antialiased ">
           <div
             className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-            <div className="lg:w-6/12">
+            <div className="lg:w-6/12 bg-amber-500 rounded-l-2xl">
               {/* Location - Mobile*/}
               <div className="cursor-pointer">
                 <Link
@@ -54,10 +55,10 @@ export default function Home() {
 
               {/* Description */}
               <div className="p-5 pb-10">
-                <h1 className="text-xl font-semibold text-gray-800 mt-4">
+                <h1 className="text-xl font-semibold text-white mt-4">
                   Location
                 </h1>
-                <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
+                <p className=" text-lg text-white mt-2 leading-relaxed">
                   Discover the location of Pamilya Market
                 </p>
               </div>
@@ -65,7 +66,7 @@ export default function Home() {
               {/* Pamilya Market - logo */}
               <div className="flex justify-center">
                 <Image
-                  src="/images/home/pamilyaMarketLogo.png"
+                  src="/images/home/pamilyaMarketLogoWhite.png"
                   width={200}
                   height={200}
                   alt="pamilya-market-logo"
@@ -108,7 +109,7 @@ export default function Home() {
         <div className="p-5 md:p-10 antialiased ">
           <div
             className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-            <div className="lg:w-6/12">
+            <div className="lg:w-6/12 bg-amber-500 rounded-l-2xl">
               {/* Floor Plan - Mobile*/}
               <div className="cursor-pointer">
                 <Link
@@ -128,10 +129,10 @@ export default function Home() {
 
               {/* Description */}
               <div className="p-5 pb-10">
-                <h1 className="text-xl font-semibold text-gray-800 mt-4">
+                <h1 className="text-xl font-semibold text-white mt-4">
                   Blueprint - Floor Plan
                 </h1>
-                <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
+                <p className=" text-lg text-white mt-2 leading-relaxed">
                   Navigate the spaces and areas of Pamilya Market
                 </p>
               </div>
@@ -139,7 +140,7 @@ export default function Home() {
               {/* Pamilya Market - logo */}
               <div className="flex justify-center">
                 <Image
-                  src="/images/home/pamilyaMarketLogo.png"
+                  src="/images/home/pamilyaMarketLogoWhite.png"
                   width={200}
                   height={200}
                   alt="pamilya-market-logo"
@@ -182,7 +183,7 @@ export default function Home() {
         <div className="p-5 md:p-10 antialiased ">
           <div
             className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-            <div className="lg:w-6/12">
+            <div className="lg:w-6/12 bg-amber-500 rounded-l-2xl">
               {/* Design - Mobile*/}
               <div className="cursor-pointer">
                 <Link
@@ -202,10 +203,10 @@ export default function Home() {
 
               {/* Description */}
               <div className="p-5 pb-10">
-                <h1 className="text-xl font-semibold text-gray-800 mt-4">
+                <h1 className="text-xl font-semibold text-white mt-4">
                   Design
                 </h1>
-                <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
+                <p className=" text-lg text-white mt-2 leading-relaxed">
                   View the design of Pamilya Market
                 </p>
               </div>
@@ -213,7 +214,7 @@ export default function Home() {
               {/* Pamilya Market - logo */}
               <div className="flex justify-center">
                 <Image
-                  src="/images/home/pamilyaMarketLogo.png"
+                  src="/images/home/pamilyaMarketLogoWhite.png"
                   width={200}
                   height={200}
                   alt="pamilya-market-logo"
@@ -256,7 +257,7 @@ export default function Home() {
         <div className="p-5 md:p-10 antialiased ">
           <div
             className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-            <div className="lg:w-6/12">
+            <div className="lg:w-6/12 bg-amber-500 rounded-l-2xl">
               {/* DTI Registration - Mobile*/}
               <div className="cursor-pointer">
                 <Link
@@ -276,10 +277,10 @@ export default function Home() {
 
               {/* Description */}
               <div className="p-5 pb-10">
-                <h1 className="text-xl font-semibold text-gray-800 mt-4">
+                <h1 className="text-xl font-semibold text-white mt-4">
                   DTI Registration - Pamilya Marketplace
                 </h1>
-                <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
+                <p className=" text-lg text-white mt-2 leading-relaxed">
                   Located in Fairview, Quezon City, NCR - National Capital Region, Second District
                 </p>
               </div>
@@ -287,7 +288,7 @@ export default function Home() {
               {/* Pamilya Market - logo */}
               <div className="flex justify-center">
                 <Image
-                  src="/images/home/pamilyaMarketLogo.png"
+                  src="/images/home/pamilyaMarketLogoWhite.png"
                   width={200}
                   height={200}
                   alt="pamilya-market-logo"
