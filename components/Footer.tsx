@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
 
             {/* All rights reserved */}
-            <footer className="my-4 text-sm text-center text-white md:block">
+            <footer className="my-4 text-base text-center text-white md:block">
                 <Link
                     target="_blank"
                     rel="noopener noreferrer"
