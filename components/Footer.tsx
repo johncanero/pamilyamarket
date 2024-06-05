@@ -7,6 +7,7 @@ import { TiSocialInstagram } from "react-icons/ti";
 const Footer = () => {
     return (
         <div className="bg-amber-600">
+            {/* Pages - Desktop */}
             <div className="pt-10 lg:px-60 lg:flex lg:justify-between hidden ">
                 {/* Pages */}
                 <div>
@@ -168,6 +169,184 @@ const Footer = () => {
                 </div>
             </div>
 
+            {/* Pages - Mobile */}
+            <div className="pt-10 block px-7 md:px-24 lg:hidden">
+                {/* Pages */}
+                <div className="flex justify-between">
+                    {/* Home - Location - Blueprint */}
+                    <div>
+                        {/* Home */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/"
+                            className="text-3xl font-bold text-white hover:underline hover:opacity-50"
+                        >
+                            Home
+                        </Link>
+
+                        <br></br>
+                        <br></br>
+                        <br></br>
+
+                        {/* Location */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/location"
+                            className="text-3xl font-bold text-white hover:underline hover:opacity-50"
+                        >
+                            Location
+                        </Link>
+
+                        <br></br>
+                        <br></br>
+                        <br></br>
+
+                        {/* Blueprint */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/blueprint"
+                            className="text-3xl font-bold mt-16 text-white hover:underline hover:opacity-50"
+                        >
+                            Blueprint
+                        </Link>
+                    </div>
+
+                    {/* Design - Registration */}
+                    <div>
+                        {/* Design */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/design"
+                            className="text-3xl font-bold text-white hover:underline hover:opacity-50"
+                        >
+                            Design
+                        </Link>
+
+                        <br></br>
+                        <br></br>
+                        <br></br>
+
+                        {/* Registration */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/registration"
+                            className="text-3xl font-bold text-white hover:underline hover:opacity-50"
+                        >
+                            Registration
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="my-12">
+                    <hr className="border-amber-500"></hr>
+                </div>
+
+
+                {/* Other Pages */}
+                <div className="flex justify-between">
+                    <div>
+                        <div>
+                            {/* About Pamilya Market */}
+                            <Link
+                                // target="_blank"
+                                rel="noopener noreferrer"
+                                href="/"
+                                className="text-white text-lg hover:underline hover:opacity-50"
+                            >
+                                About Pamilya Market
+                            </Link>
+
+                            <br></br>
+                            <br></br>
+
+                            {/* Beliefs */}
+                            <Link
+                                // target="_blank"
+                                rel="noopener noreferrer"
+                                href="/"
+                                className="text-white text-lg hover:underline hover:opacity-50"
+                            >
+                                Beliefs
+                            </Link>
+
+                            <br></br>
+                            <br></br>
+
+                            {/* Customer Care */}
+                            <Link
+                                // target="_blank"
+                                rel="noopener noreferrer"
+                                href="/"
+                                className="text-white text-lg hover:underline hover:opacity-50"
+                            >
+                                Customer Care
+                            </Link>
+
+                            <br></br>
+                            <br></br>
+
+                            {/* Popular Links */}
+                            <Link
+                                // target="_blank"
+                                rel="noopener noreferrer"
+                                href="/"
+                                className="text-white text-lg hover:underline hover:opacity-50"
+                            >
+                                Popular Links
+                            </Link>
+
+                            <br></br>
+                            <br></br>
+
+                            {/* Accessibility */}
+                            <Link
+                                // target="_blank"
+                                rel="noopener noreferrer"
+                                href="/"
+                                className="text-white text-lg hover:underline hover:opacity-50"
+                            >
+                                Accessibility
+                            </Link>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div>
+                        {/* About Pamilya Market */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/"
+                            className="text-white text-lg hover:underline hover:opacity-50"
+                        >
+                            Terms of Use
+                        </Link>
+
+                        <br></br>
+                        <br></br>
+
+
+                        {/* Your Privacy */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/"
+                            className="text-white text-lg hover:underline hover:opacity-50"
+                        >
+                            Your Privacy
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
             <div className="lg:my-16 my-12 px-7 md:px-24 lg:px-60">
                 <hr className="border-amber-500"></hr>
             </div>
@@ -214,7 +393,7 @@ const Footer = () => {
                 <span className=" font-semibold text-white mx-1">
                     Pamilya Market.
                 </span>
-                
+
                 All rights reserved.
             </footer>
         </div>
