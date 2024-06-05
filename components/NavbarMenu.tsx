@@ -39,7 +39,7 @@ const NavbarMenu = () => {
                     </div>
 
                     {/* Design */}
-                    <div className='mt-1 ml-10'>
+                    <div className='mt-1 ml-8'>
                         <Link
                             rel="noopener noreferrer"
                             href="/design"

@@ -74,7 +74,7 @@ export function NavbarTabs() {
                         rel="noopener noreferrer"
                         href="http://m.me/pamilyamarketph"
                     >
-                        <BsMessenger size={25} className="mt-2 text-amber-600 hover:text-amber-700" />
+                        <BsMessenger size={25} className="mt-2 text-orange-500 hover:text-orange-600" />
                     </Link>
                 </div>
             </div>
