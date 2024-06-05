@@ -25,7 +25,7 @@ export default function Home() {
           width={350}
           height={350}
           alt="pamilya-market-logo"
-          className="mx-auto lg:mt-28 mt-44 max-w-xs md:max-w-full"
+          className="mx-auto lg:mt-28 mt-16 max-w-xs md:max-w-full"
         />
       </motion.div>
       
@@ -34,6 +34,23 @@ export default function Home() {
         <div
           className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
           <div className="lg:w-6/12">
+            {/* DTI Registration - Mobile*/}
+            <div className="cursor-pointer">
+              <Link
+                // target="_blank"
+                rel="noopener noreferrer"
+                href="/registration"
+              >
+                <Image
+                  src="/images/home/card01dtiRegistartion.png"
+                  width={1600}
+                  height={1600}
+                  alt="dti-registartion"
+                  className="rounded-t-2xl lg:hidden"
+                />
+              </Link>
+            </div>
+
             {/* Description */}
             <div className="p-5 pb-10">
               <h1 className="text-xl font-semibold text-gray-800 mt-4">
@@ -55,7 +72,7 @@ export default function Home() {
               />
             </div>
 
-            {/* Button */}
+            {/* Button */}  
             <div className="flex justify-center mt-4 mb-8">
               <Link
                 // target="_blank"
@@ -68,7 +85,7 @@ export default function Home() {
           </div>
 
 
-          {/* DTI Registration */}
+          {/* DTI Registration - Desktop*/}
           <div className="cursor-pointer">
             <Link
               // target="_blank"
@@ -92,6 +109,23 @@ export default function Home() {
         <div
           className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
           <div className="lg:w-6/12">
+            {/* Floor Plan - Mobile*/}
+            <div className="cursor-pointer">
+              <Link
+                // target="_blank"
+                rel="noopener noreferrer"
+                href="/blueprint"
+              >
+                <Image
+                  src="/images/home/card02floorPlan.png"
+                  width={1600}
+                  height={1600}
+                  alt="blueprint"
+                  className="rounded-t-2xl lg:hidden"
+                />
+              </Link>
+            </div>
+
             {/* Description */}
             <div className="p-5 pb-10">
               <h1 className="text-xl font-semibold text-gray-800 mt-4">
@@ -126,7 +160,7 @@ export default function Home() {
           </div>
 
 
-          {/* Floor Plan */}
+          {/* Floor Plan - Desktop */}
           <div className="cursor-pointer">
             <Link
               // target="_blank"
