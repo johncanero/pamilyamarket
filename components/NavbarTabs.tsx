@@ -22,21 +22,16 @@ export function NavbarTabs() {
         <div className="flex justify-between mx-8 md:mx-16">
             <Tabs defaultValue="home" className="hidden lg:block md:w-[240px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
+                    {/* Pamilya */}
                     <Link href="/">
                         <TabsTrigger value="home">
                             <div className="flex md:gap-x-1">
-                                {/* <Image
-                                    src="/images/logo/pamilyaMarketLogoBlack.png"
-                                    width={24}
-                                    height={24}
-                                    alt="pamilya-market-logo-black"
-                                    className="w-7 md:w-8"
-                                /> */}
                                 <p className="md:text-base text-sm">Pamilya</p>
                             </div>
                         </TabsTrigger>
                     </Link>
 
+                    {/* Location */}
                     <Link href="/location">
                         <TabsTrigger value="location">
                             <div className="flex gap-x-1">
@@ -47,7 +42,8 @@ export function NavbarTabs() {
                     </Link>
                 </TabsList>
             </Tabs>
-
+            
+            {/* Pamilya Market Logo - Mobile & Tablet */}
             <Link
                 href="/"
             >
@@ -64,19 +60,21 @@ export function NavbarTabs() {
                 </motion.div>
             </Link>
 
-            {/* Pamilya Market - Taglline (lg) */}
+            {/* Pamilya Market Tagline - Desktop */}
             <div className="hidden lg:block">
                 <div className="flex gap-x-4">
                     <p className="italic mt-3">
                         <span className="font-bold">Fairview's freshest! ‍</span>
                         Nourish your family with quality meats, fish, veggies & more.
                     </p>
+
+                    {/* Messenger */}
                     <Link
                         target="_blank"
                         rel="noopener noreferrer"
                         href="http://m.me/pamilyamarketph"
                     >
-                        <BsMessenger size={25} className="mt-2 text-amber-700 hover:text-amber-800" />
+                        <BsMessenger size={25} className="mt-2 text-amber-600 hover:text-amber-700" />
                     </Link>
                 </div>
             </div>

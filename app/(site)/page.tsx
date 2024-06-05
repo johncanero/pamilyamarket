@@ -84,7 +84,6 @@ export default function Home() {
             </div>
           </div>
 
-
           {/* Floor Plan - Desktop */}
           <div className="cursor-pointer">
             <Link
@@ -97,7 +96,7 @@ export default function Home() {
                 width={1600}
                 height={1600}
                 alt="blueprint"
-                className="rounded-2xl hidden lg:block"
+                className="rounded-r-2xl hidden lg:block"
               />
             </Link>
           </div>
@@ -172,7 +171,7 @@ export default function Home() {
                 width={1600}
                 height={1600}
                 alt="dti-registartion"
-                className="rounded-2xl hidden lg:block"
+                className="rounded-r-2xl hidden lg:block"
               />
             </Link>
           </div>
