@@ -78,8 +78,8 @@ export default function Home() {
                 // target="_blank"
                 rel="noopener noreferrer"
                 href="/location"
-              >
-                <Button className="text-lg rounded-full py-8 px-16 font-semibold">Explore Pamilya Market</Button>
+              > 
+                <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">Explore PamilyaMarket</Button>
               </Link>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 href="/registration"
               >
-                <Button className="text-lg rounded-full py-8 px-16 font-semibold">See Registration</Button>
+                <Button className="text-lg rounded-full py-8 px-20 font-semibold">See Registration</Button>
               </Link>
             </div>
           </div>
