@@ -28,7 +28,7 @@ export default function Home() {
           className="mx-auto lg:my-28 my-16 max-w-xs md:max-w-full"
         />
       </motion.div>
-      
+
       {/* Location */}
       <div className="p-5 md:p-10 antialiased ">
         <div
@@ -54,10 +54,10 @@ export default function Home() {
             {/* Description */}
             <div className="p-5 pb-10">
               <h1 className="text-xl font-semibold text-gray-800 mt-4">
-                Blueprint - Floor Plan
+                Location
               </h1>
               <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
-                Discover and navigate the spaces and areas of Pamilya Market
+                Discover the location of Pamilya Market
               </p>
             </div>
 
@@ -77,9 +77,9 @@ export default function Home() {
               <Link
                 // target="_blank"
                 rel="noopener noreferrer"
-                href="/blueprint"
+                href="/location"
               >
-                <Button className="text-lg rounded-full py-8 px-16 font-semibold">Navigate Floor Plan</Button>
+                <Button className="text-lg rounded-full py-8 px-16 font-semibold">Explore Pamilya Market</Button>
               </Link>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 Blueprint - Floor Plan
               </h1>
               <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
-                Discover and navigate the spaces and areas of Pamilya Market
+                Navigate the spaces and areas of Pamilya Market
               </p>
             </div>
 
