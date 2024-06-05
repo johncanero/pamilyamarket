@@ -21,7 +21,7 @@ import NavbarMobileTagline from "./NavbarMobileTagline"
 
 export function NavbarTabs() {
     return (
-        <div className="lg:flex lg:justify-between">
+        <div className="lg:flex lg:justify-between lg:px-16">
             {/* Desktop */}
             <Tabs defaultValue="home" className="hidden lg:block md:w-[240px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
