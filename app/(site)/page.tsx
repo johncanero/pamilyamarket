@@ -203,10 +203,10 @@ export default function Home() {
               {/* Description */}
               <div className="p-5 pb-10">
                 <h1 className="text-xl font-semibold text-gray-800 mt-4">
-                  Blueprint - Floor Plan
+                  Design
                 </h1>
                 <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
-                  Navigate the spaces and areas of Pamilya Market
+                  View the design of Pamilya Market
                 </p>
               </div>
 
