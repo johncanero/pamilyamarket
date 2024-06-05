@@ -95,7 +95,7 @@ export function NavbarTabs() {
             <div className="hidden lg:block">
                 <div className="flex gap-x-4">
                     <p className="italic mt-3">
-                        <span className="font-bold">Fairview's freshest! ‍</span>
+                        <span className="font-bold">Fairview's pinaka-sariwa! ‍</span>
                         Nourish your family with quality meats, fish, veggies & more.
                     </p>
 
