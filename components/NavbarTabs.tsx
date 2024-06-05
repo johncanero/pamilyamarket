@@ -9,6 +9,7 @@ import {
     TabsList,
     TabsTrigger,
 } from "@/components/ui/tabs-pamilya"
+import { Button } from "@/components/ui/button"
 
 import { MapPinned } from 'lucide-react';
 import { BsMessenger } from "react-icons/bs";
@@ -19,7 +20,8 @@ import { motion } from "framer-motion"
 
 export function NavbarTabs() {
     return (
-        <div className="flex justify-between mx-8 md:mx-16">
+        <div className="lg:flex lg:justify-between my-2 md:my-0 mx-6 md:mx-16">
+            {/* Desktop */}
             <Tabs defaultValue="home" className="hidden lg:block md:w-[240px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
                     {/* Pamilya */}
@@ -42,23 +44,44 @@ export function NavbarTabs() {
                     </Link>
                 </TabsList>
             </Tabs>
-            
-            {/* Pamilya Market Logo - Mobile & Tablet */}
-            <Link
-                href="/"
-            >
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="lg:hidden flex gap-x-1">
-                    <Image
-                        src="/images/logo/pamilyaMarketTextwithLogo.png"
-                        width={128}
-                        height={128}
-                        alt="pamilya-market-logo"
-                    />
-                </motion.div>
-            </Link>
+
+            <div className="flex justify-between lg:hidden ">
+                {/* Pamilya Market Tagline - Mobile & Tablet */}
+                <div>
+                    <SheetMobileTablet />
+                </div>
+
+                {/* Pamilya Market Logo - Mobile & Tablet */}
+                <div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                    >
+                        <Link
+                            rel="noopener noreferrer"
+                            href="/"
+                        >
+                            <Image
+                                src="/images/logo/pamilyaMarketTextwithLogo.png"
+                                width={140}
+                                height={140}
+                                alt="pamilya-market-logo"
+                            />
+                        </Link>
+                    </motion.div>
+                </div>
+
+                <div>
+                    <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.facebook.com/pamilyamarketph"
+                    >
+                        {/* <Button className="text-sm rounded-3xl px-4 font-semibold">About</Button> */}
+                        <p className="mt-1 cursor-pointer font-medium text-amber-600">About</p>
+                    </Link>
+                </div>
+            </div>
 
             {/* Pamilya Market Tagline - Desktop */}
             <div className="hidden lg:block">
@@ -76,21 +99,6 @@ export function NavbarTabs() {
                     >
                         <BsMessenger size={25} className="mt-2 text-orange-500 hover:text-orange-600" />
                     </Link>
-                </div>
-            </div>
-
-            {/* Pamilya Market - Taglline (sm-md) */}
-            <div className="lg:hidden">
-                <div className="flex gap-x-4">
-                    <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="http://m.me/pamilyamarketph"
-                    >
-                        {/* <BsMessenger size={24} className="mt-3 text-amber-700 hover:text-amber-800" /> */}
-                    </Link>
-
-                    <SheetMobileTablet />
                 </div>
             </div>
         </div>
