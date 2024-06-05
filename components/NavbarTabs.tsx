@@ -78,7 +78,7 @@ export function NavbarTabs() {
                         href="https://www.facebook.com/pamilyamarketph"
                     >
                         {/* <Button className="text-sm rounded-3xl px-4 font-semibold">About</Button> */}
-                        <p className="mt-1 cursor-pointer font-medium text-amber-600">About</p>
+                        <p className="mt-2 cursor-pointer font-medium text-amber-600">About</p>
                     </Link>
                 </div>
             </div>
