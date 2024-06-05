@@ -17,10 +17,11 @@ import { BsMessenger } from "react-icons/bs";
 import SheetMobileTablet from "./SheetMobileTablet";
 
 import { motion } from "framer-motion"
+import NavbarMobileTagline from "./NavbarMobileTagline"
 
 export function NavbarTabs() {
     return (
-        <div className="lg:flex lg:justify-between my-2 md:my-0 mx-6 md:mx-16">
+        <div className="lg:flex lg:justify-between">
             {/* Desktop */}
             <Tabs defaultValue="home" className="hidden lg:block md:w-[240px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
@@ -45,43 +46,48 @@ export function NavbarTabs() {
                 </TabsList>
             </Tabs>
 
-            <div className="flex justify-between lg:hidden ">
-                {/* Pamilya Market Tagline - Mobile & Tablet */}
-                <div>
-                    <SheetMobileTablet />
-                </div>
+            {/* Mobile */}
+            <div className="lg:hidden">
+                <NavbarMobileTagline />
 
-                {/* Pamilya Market Logo - Mobile & Tablet */}
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                    >
-                        <Link
-                            rel="noopener noreferrer"
-                            href="/"
+                <div className="flex justify-between mx-6 mt-2 md:mt-3 ">
+                    {/* Pamilya Market Tagline - Mobile & Tablet */}
+                    <div>
+                        <SheetMobileTablet />
+                    </div>
+
+                    {/* Pamilya Market Logo - Mobile & Tablet */}
+                    <div>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
                         >
-                            <Image
-                                src="/images/logo/pamilyaMarketTextwithLogo.png"
-                                width={140}
-                                height={140}
-                                alt="pamilya-market-logo"
-                            />
+                            <Link
+                                rel="noopener noreferrer"
+                                href="/"
+                            >
+                                <Image
+                                    src="/images/logo/pamilyaMarketTextwithLogo.png"
+                                    width={140}
+                                    height={140}
+                                    alt="pamilya-market-logo"
+                                />
+                            </Link>
+                        </motion.div>
+                    </div>
+
+                    <div>
+
+
+                        {/* Messenger */}
+                        <Link
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="http://m.me/pamilyamarketph"
+                        >
+                            <BsMessenger size={26} className="mt-1 text-orange-500 hover:text-orange-600" />
                         </Link>
-                    </motion.div>
-                </div>
-
-                <div>
-           
-
-                    {/* Messenger */}
-                    <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="http://m.me/pamilyamarketph"
-                    >
-                        <BsMessenger size={26} className="mt-1 text-orange-500 hover:text-orange-600" />
-                    </Link>
+                    </div>
                 </div>
             </div>
 

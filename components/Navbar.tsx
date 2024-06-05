@@ -5,7 +5,7 @@ import NavbarMenu from './NavbarMenu'
 const Navbar = () => {
   return (
     <div>
-      <div className=' lg:bg-orange-300 py-2 '>
+      <div className=' lg:bg-orange-300 lg:py-2'>
         <NavbarTabs />
       </div>
 
