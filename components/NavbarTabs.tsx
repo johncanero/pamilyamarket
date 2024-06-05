@@ -72,13 +72,15 @@ export function NavbarTabs() {
                 </div>
 
                 <div>
+           
+
+                    {/* Messenger */}
                     <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://www.facebook.com/pamilyamarketph"
+                        href="http://m.me/pamilyamarketph"
                     >
-                        {/* <Button className="text-sm rounded-3xl px-4 font-semibold">About</Button> */}
-                        <p className="mt-2 cursor-pointer font-medium text-amber-600">About</p>
+                        <BsMessenger size={26} className="mt-1 text-orange-500 hover:text-orange-600" />
                     </Link>
                 </div>
             </div>
