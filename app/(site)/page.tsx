@@ -29,6 +29,80 @@ export default function Home() {
         />
       </motion.div>
       
+      {/* Location */}
+      <div className="p-5 md:p-10 antialiased ">
+        <div
+          className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
+          <div className="lg:w-6/12">
+            {/* Location - Mobile*/}
+            <div className="cursor-pointer">
+              <Link
+                // target="_blank"
+                rel="noopener noreferrer"
+                href="/location"
+              >
+                <Image
+                  src="/images/home/card03Location.png"
+                  width={1600}
+                  height={1600}
+                  alt="location"
+                  className="rounded-t-2xl lg:hidden"
+                />
+              </Link>
+            </div>
+
+            {/* Description */}
+            <div className="p-5 pb-10">
+              <h1 className="text-xl font-semibold text-gray-800 mt-4">
+                Blueprint - Floor Plan
+              </h1>
+              <p className=" text-lg text-gray-400 mt-2 leading-relaxed">
+                Discover and navigate the spaces and areas of Pamilya Market
+              </p>
+            </div>
+
+            {/* Pamilya Market - logo */}
+            <div className="flex justify-center">
+              <Image
+                src="/images/home/pamilyaMarketLogo.png"
+                width={200}
+                height={200}
+                alt="pamilya-market-logo"
+                className="rounded-2xl hidden lg:block"
+              />
+            </div>
+
+            {/* Button */}
+            <div className="flex justify-center mt-4 mb-8">
+              <Link
+                // target="_blank"
+                rel="noopener noreferrer"
+                href="/blueprint"
+              >
+                <Button className="text-lg rounded-full py-8 px-16 font-semibold">Navigate Floor Plan</Button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Location - Desktop */}
+          <div className="cursor-pointer">
+            <Link
+              // target="_blank"
+              rel="noopener noreferrer"
+              href="/location"
+            >
+              <Image
+                src="/images/home/card03Location.png"
+                width={1600}
+                height={1600}
+                alt="location"
+                className="rounded-r-2xl hidden lg:block"
+              />
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Floor Plan */}
       <div className="p-5 md:p-10 antialiased ">
         <div
