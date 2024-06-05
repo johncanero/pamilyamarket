@@ -21,6 +21,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { BsMessenger } from "react-icons/bs";
 import { MdSpaceDashboard } from "react-icons/md";
 import { FaRegRegistered } from "react-icons/fa6";
+import { MdArchitecture } from "react-icons/md";
 
 import { motion } from "framer-motion"
 
@@ -33,6 +34,7 @@ const SheetMobileTablet = () => {
                 <IoIosMenu size={32} className='mt-1 text-zinc-800 hover:text-amber-800' />
             </SheetTrigger>
             <SheetContent>
+                {/* Logo */}
                 <SheetHeader>
                     <SheetTitle>
                         <Link
@@ -68,6 +70,7 @@ const SheetMobileTablet = () => {
                     <SheetDescription>
                         <p className='my-3 mx-3 text-lg'>Menu</p>
                         <div>
+                            {/* Home */}
                             <Link
                                 href="/"
 
@@ -80,6 +83,7 @@ const SheetMobileTablet = () => {
                                 </SheetPrimitive.Close>
                             </Link>
 
+                            {/* Location */}
                             <Link
                                 href="/location"
                             >
@@ -91,6 +95,7 @@ const SheetMobileTablet = () => {
                                 </SheetPrimitive.Close>
                             </Link>
 
+                            {/* Blueprint */}
                             <Link
                                 href="/blueprint"
                             >
@@ -102,6 +107,19 @@ const SheetMobileTablet = () => {
                                 </SheetPrimitive.Close>
                             </Link>
 
+                            {/* Design */}
+                            <Link
+                                href="/design"
+                            >
+                                <SheetPrimitive.Close>
+                                    <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
+                                        <MdArchitecture size={22} className='mt-1 text-amber-600' />
+                                        <p className='text-lg'>Design</p>
+                                    </div>
+                                </SheetPrimitive.Close>
+                            </Link>
+
+                            {/* Registration */}
                             <Link
                                 href="/registration"
                             >
