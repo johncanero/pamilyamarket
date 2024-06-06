@@ -1,10 +1,43 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client"
+import React, { useState, useEffect } from 'react';
+
 import Link from "next/link";
 import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa";
 import { TiSocialInstagram } from "react-icons/ti";
 
 const Footer = () => {
+    // Sroll To Top
+    const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+
+    function scrollToTop() {
+        if (!isBrowser()) return;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleScroll = () => {
+        // Show the button when the user scrolls down
+        if (window.scrollY > 100) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
+
+    useEffect(() => {
+        // Add scroll event listener when the component mounts
+        window.addEventListener('scroll', handleScroll);
+
+        // Remove the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
         <div className="bg-amber-600">
             {/* Pages - Desktop */}
@@ -77,121 +110,107 @@ const Footer = () => {
                 {/* Other Pages */}
                 <div>
                     {/* About Pamilya Market */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
                         About Pamilya Market
-                    </Link>
+                    </button>
 
                     <br></br>
                     <br></br>
 
                     {/* Beliefs */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
                         Beliefs
-                    </Link>
+                    </button>
+
 
                     <br></br>
                     <br></br>
 
                     {/* Customer Care */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
                         Customer Care
-                    </Link>
+                    </button>
 
                     <br></br>
                     <br></br>
 
                     {/* Popular Links */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
                         Popular Links
-                    </Link>
+                    </button>
+
 
                     <br></br>
                     <br></br>
 
                     {/* Accessibility */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
                         Accessibility
-                    </Link>
+                    </button>
+
 
                 </div>
 
                 {/* Other Pages */}
                 <div>
                     {/* Frequently Asked Questions */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
-                        Frequently Asked Questions
-                    </Link>
+                        Frequently Asked Questions (FAQ)
+                    </button>
+
 
                     <br></br>
                     <br></br>
 
                     {/* Contact */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
                         Contact
-                    </Link>
+                    </button>
+
 
                     <br></br>
                     <br></br>
 
                     {/* Terms of Use */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
                         Terms of Use
-                    </Link>
+                    </button>
+
 
                     <br></br>
                     <br></br>
 
                     {/* Your Privacy */}
-                    <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/"
-                        className="text-white text-lg hover:underline hover:opacity-50"
+                    <button // Security best practice
+                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                        onClick={scrollToTop}
                     >
                         Your Privacy
-                    </Link>
-
-
+                    </button>
                 </div>
             </div>
 
