@@ -37,7 +37,8 @@ const Footer = () => {
         };
     }, []);
 
-
+    // Reference: https://medium.com/@ojogbomichael/same-page-navigation-with-nextjs-bb99cccfda11
+    
     return (
         <div className="bg-amber-600">
             {/* Pages - Desktop */}
