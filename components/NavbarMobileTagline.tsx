@@ -8,7 +8,7 @@ const NavbarMobile = () => {
       <div className="lg:hidden">
         <div>
           <p className="text-sm md:text-base text-center italic">
-            <span className="font-bold">Fairview's freshest! ‍</span>
+            <span className="font-bold">Fairview's pinaka-sariwa! ‍</span>
             Nourish your family with quality meats, fish, veggies & more.
           </p>
         </div>
