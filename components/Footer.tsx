@@ -295,125 +295,111 @@ const Footer = () => {
                 {/* Other Pages */}
                 <div className="flex justify-between">
                     <div>
+                        {/* About Pamilya Market -> Accessibility */}
                         <div>
                             {/* About Pamilya Market */}
-                            <Link
-                                // target="_blank"
-                                rel="noopener noreferrer"
-                                href="/"
-                                className="text-white text-lg hover:underline hover:opacity-50"
+                            <button // Security best practice
+                                className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                                onClick={scrollToTop}
                             >
                                 About Pamilya Market
-                            </Link>
+                            </button>
+
 
                             <br></br>
                             <br></br>
 
                             {/* Beliefs */}
-                            <Link
-                                // target="_blank"
-                                rel="noopener noreferrer"
-                                href="/"
-                                className="text-white text-lg hover:underline hover:opacity-50"
+                            <button // Security best practice
+                                className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                                onClick={scrollToTop}
                             >
                                 Beliefs
-                            </Link>
+                            </button>
+
 
                             <br></br>
                             <br></br>
 
                             {/* Customer Care */}
-                            <Link
-                                // target="_blank"
-                                rel="noopener noreferrer"
-                                href="/"
-                                className="text-white text-lg hover:underline hover:opacity-50"
+                            <button // Security best practice
+                                className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                                onClick={scrollToTop}
                             >
                                 Customer Care
-                            </Link>
+                            </button>
+
 
                             <br></br>
                             <br></br>
 
                             {/* Popular Links */}
-                            <Link
-                                // target="_blank"
-                                rel="noopener noreferrer"
-                                href="/"
-                                className="text-white text-lg hover:underline hover:opacity-50"
+                            <button // Security best practice
+                                className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                                onClick={scrollToTop}
                             >
                                 Popular Links
-                            </Link>
+                            </button>
+
 
                             <br></br>
                             <br></br>
 
                             {/* Accessibility */}
-                            <Link
-                                // target="_blank"
-                                rel="noopener noreferrer"
-                                href="/"
-                                className="text-white text-lg hover:underline hover:opacity-50"
+                            <button // Security best practice
+                                className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                                onClick={scrollToTop}
                             >
                                 Accessibility
-                            </Link>
+                            </button>
                         </div>
-
-
-
-
                     </div>
 
                     <div>
                         {/* FAQ */}
-                        <Link
-                            // target="_blank"
-                            rel="noopener noreferrer"
-                            href="/"
-                            className="text-white text-lg hover:underline hover:opacity-50"
+                        <button // Security best practice
+                            className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                            onClick={scrollToTop}
                         >
                             FAQ
-                        </Link>
+                        </button>
+
 
                         <br></br>
                         <br></br>
 
                         {/* Contact */}
-                        <Link
-                            // target="_blank"
-                            rel="noopener noreferrer"
-                            href="/"
-                            className="text-white text-lg hover:underline hover:opacity-50"
+                        <button // Security best practice
+                            className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                            onClick={scrollToTop}
                         >
                             Contact
-                        </Link>
+                        </button>
 
                         <br></br>
                         <br></br>
 
                         {/* Terms of Use*/}
-                        <Link
-                            // target="_blank"
-                            rel="noopener noreferrer"
-                            href="/"
-                            className="text-white text-lg hover:underline hover:opacity-50"
+                        <button // Security best practice
+                            className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                            onClick={scrollToTop}
                         >
                             Terms of Use
-                        </Link>
+                        </button>
+
 
                         <br></br>
                         <br></br>
 
 
                         {/* Your Privacy */}
-                        <Link
-                            // target="_blank"
-                            rel="noopener noreferrer"
-                            href="/"
-                            className="text-white text-lg hover:underline hover:opacity-50"
+                        <button // Security best practice
+                            className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
+                            onClick={scrollToTop}
                         >
                             Your Privacy
-                        </Link>
+                        </button>
+
                     </div>
                 </div>
             </div>
