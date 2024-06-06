@@ -142,7 +142,33 @@ const Footer = () => {
 
                 {/* Other Pages */}
                 <div>
-                    {/* About Pamilya Market */}
+                    {/* Frequently Asked Questions */}
+                    <Link
+                        // target="_blank"
+                        rel="noopener noreferrer"
+                        href="/"
+                        className="text-white text-lg hover:underline hover:opacity-50"
+                    >
+                        Frequently Asked Questions
+                    </Link>
+
+                    <br></br>
+                    <br></br>
+
+                    {/* Contact */}
+                    <Link
+                        // target="_blank"
+                        rel="noopener noreferrer"
+                        href="/"
+                        className="text-white text-lg hover:underline hover:opacity-50"
+                    >
+                        Contact
+                    </Link>
+
+                    <br></br>
+                    <br></br>
+
+                    {/* Terms of Use */}
                     <Link
                         // target="_blank"
                         rel="noopener noreferrer"
@@ -320,7 +346,33 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        {/* About Pamilya Market */}
+                        {/* FAQ */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/"
+                            className="text-white text-lg hover:underline hover:opacity-50"
+                        >
+                            FAQ
+                        </Link>
+
+                        <br></br>
+                        <br></br>
+
+                        {/* Contact */}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/"
+                            className="text-white text-lg hover:underline hover:opacity-50"
+                        >
+                            Contact
+                        </Link>
+
+                        <br></br>
+                        <br></br>
+
+                        {/* Terms of Use*/}
                         <Link
                             // target="_blank"
                             rel="noopener noreferrer"
@@ -346,7 +398,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            
+
             {/* Horizontal Line */}
             <div className="lg:my-16 my-12 px-7 md:px-24 lg:px-60">
                 <hr className="border-amber-500"></hr>
@@ -390,7 +442,7 @@ const Footer = () => {
                     <p className="text-base text-white">Experience Fairview's freshest.</p>
                     <p className="text-3xl font-bold tracking-tighter mt-4 text-white">Follow Pamilya Market</p>
                 </div>
-                
+
                 {/* Stay in Touch */}
                 <div className="mt-20">
                     <p className="text-base text-white">Stay in Touch</p>
