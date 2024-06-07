@@ -35,7 +35,7 @@ export default function Home() {
         <div className="p-5 md:p-10 antialiased ">
           <div
             className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-            <div className="lg:w-6/12 bg-amber-500 rounded-2xl">
+            <div className="lg:w-6/12  bg-amber-500 rounded-2xl lg:rounded-l-2xl lg:rounded-r-none">
               {/* Location - Mobile*/}
               <div className="cursor-pointer">
                 <Link
@@ -109,7 +109,7 @@ export default function Home() {
         <div className="p-5 md:p-10 antialiased ">
           <div
             className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-            <div className="lg:w-6/12 bg-amber-500 rounded-2xl">
+            <div className="lg:w-6/12  bg-amber-500 rounded-2xl lg:rounded-l-2xl lg:rounded-r-none">
               {/* Floor Plan - Mobile*/}
               <div className="cursor-pointer">
                 <Link
@@ -183,7 +183,7 @@ export default function Home() {
         <div className="p-5 md:p-10 antialiased ">
           <div
             className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-            <div className="lg:w-6/12 bg-amber-500 rounded-2xl">
+            <div className="lg:w-6/12  bg-amber-500 rounded-2xl lg:rounded-l-2xl lg:rounded-r-none">
               {/* Design - Mobile*/}
               <div className="cursor-pointer">
                 <Link
@@ -257,7 +257,7 @@ export default function Home() {
         <div className="p-5 md:p-10 antialiased ">
           <div
             className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
-            <div className="lg:w-6/12 bg-amber-500 rounded-2xl">
+            <div className="lg:w-6/12  bg-amber-500 rounded-2xl lg:rounded-l-2xl lg:rounded-r-none">
               {/* DTI Registration - Mobile*/}
               <div className="cursor-pointer">
                 <Link
