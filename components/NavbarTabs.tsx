@@ -24,6 +24,7 @@ const navigation: NavigationItem[] = [
     { href: '/location', name: 'Location' },
 ]
 
+// Reference: https://nikolasbarwicki.com/articles/highlight-currently-active-link-in-nextjs-13-with-app-router/
 
 import { BsMessenger } from "react-icons/bs";
 import SheetMobileTablet from "./SheetMobileTablet";
