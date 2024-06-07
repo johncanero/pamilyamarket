@@ -14,15 +14,6 @@ import { motion } from "framer-motion"
 
 // navigaiton links
 import { useActivePath } from '../app/helper'
-type NavigationItem = {
-    href: string
-    name: string
-}
-
-const navigation: NavigationItem[] = [
-    { href: '/', name: 'Pamilya' },
-    { href: '/location', name: 'Location' },
-]
 
 // Reference: https://nikolasbarwicki.com/articles/highlight-currently-active-link-in-nextjs-13-with-app-router/
 
@@ -38,24 +29,29 @@ export function NavbarTabs() {
             {/* Desktop */}
             <Tabs defaultValue="home" className="hidden lg:block md:w-[240px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
-                    {/* pages */}
-                    <ul className="flex gap-x-2">
-                        {navigation.map(({ href, name }) => (
-                            <li key={href}>
-                                <Link
-                                    rel="noopener noreferrer"
-                                    href={href}
-                                    className={`active ${checkActivePath(href) ? '' : 'text-stone-600'}`}
-                                >
-                                    <TabsTrigger value={href}>
-                                        <div className="flex md:gap-x-1">
-                                            <span className="md:text-base">{name}</span>
-                                        </div>
-                                    </TabsTrigger>
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                    {/* Pamilya */}
+                    <Link
+                        href="/"
+                        className={`active ${checkActivePath("/") ? '' : ''}`}
+                    >
+                        <TabsTrigger value="home">
+                            <div className="flex md:gap-x-1">
+                                <p className="md:text-base text-sm">Pamilya</p>
+                            </div>
+                        </TabsTrigger>
+                    </Link>
+
+                    {/* Location */}
+                    <Link
+                        href="/location"    
+                        className={`active ${checkActivePath("/location") ? '' : ''}`}
+                    >
+                        <TabsTrigger value="location">
+                            <div className="flex gap-x-1">
+                                <p className="md:text-base text-sm">Location</p>
+                            </div>
+                        </TabsTrigger>
+                    </Link>
                 </TabsList>
             </Tabs>
 
