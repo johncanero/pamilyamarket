@@ -44,11 +44,11 @@ export function NavbarTabs() {
                                 <Link
                                     rel="noopener noreferrer"
                                     href={href}
-                                    className={`active ${checkActivePath(href) ? '' : ''}`}
+                                    className={`active ${checkActivePath(href) ? '' : 'text-stone-600'}`}
                                 >
                                     <TabsTrigger value={href}>
                                         <div className="flex md:gap-x-1">
-                                            <span className="md:text-base text-sm">{name}</span>
+                                            <span className="md:text-base">{name}</span>
                                         </div>
                                     </TabsTrigger>
                                 </Link>
