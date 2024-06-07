@@ -6,7 +6,24 @@ import Link from 'next/link'
 
 import { motion } from "framer-motion"
 
+// navigaiton links
+import { useActivePath } from '../app/helper'
+type NavigationItem = {
+    href: string
+    name: string
+}
+
+const navigation: NavigationItem[] = [
+    { href: '/blueprint', name: 'Blueprint' },
+    { href: '/design', name: 'Design' },
+    { href: '/registration', name: 'Registration' },
+]
+
+// Reference: https://nikolasbarwicki.com/articles/highlight-currently-active-link-in-nextjs-13-with-app-router/
+
 const NavbarMenu = () => {
+    const checkActivePath = useActivePath()
+
     return (
         <div className='hidden lg:block'>
             <div className='md:flex md:justify-between lg:mx-16 md:py-6 hidden'>
@@ -28,36 +45,19 @@ const NavbarMenu = () => {
                         </Link>
                     </motion.div>
 
-                    {/* Blueprint */}
-                    <div className='mt-1 ml-10'>
-                        <Link
-                            rel="noopener noreferrer"
-                            href="/blueprint"
-                        >
-                            <p className="text-amber-600">Blueprint</p>
-                        </Link>
-                    </div>
-
-                    {/* Design */}
-                    <div className='mt-1 ml-8'>
-                        <Link
-                            rel="noopener noreferrer"
-                            href="/design"
-                        >
-                            <p className="text-amber-600">Design</p>
-                        </Link>
-                    </div>
-
-
-                    {/* Registration */}
-                    <div className='mt-1 ml-8'>
-                        <Link
-                            rel="noopener noreferrer"
-                            href="/registration"
-                        >
-                            <p className="text-amber-600">Registration</p>
-                        </Link>
-                    </div>
+                    <ul className='flex gap-x-8 ml-10 mt-1'>
+                        {navigation.map(({ href, name }) => (
+                            <li key={href}>
+                                <Link
+                                    rel="noopener noreferrer"
+                                    href={href}
+                                    className={`active ${checkActivePath(href) ? 'font-semibold text-amber-600' : 'text-amber-600'}`}
+                                >
+                                    <span>{name}</span>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
 
 
@@ -79,3 +79,6 @@ const NavbarMenu = () => {
 }
 
 export default NavbarMenu
+
+
+
