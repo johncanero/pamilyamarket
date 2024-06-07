@@ -1,6 +1,7 @@
 import React from 'react'
-import { NavbarTabs } from './NavbarTabs'
-import NavbarMenu from './NavbarMenu'
+import { NavbarTabs } from '../navigation/NavbarTabs'
+import NavbarMenu from '../navigation/NavbarMenu'
+
 
 const Navbar = () => {
   return (

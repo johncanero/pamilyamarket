@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { motion } from "framer-motion"
 
 // navigaiton links
-import { useActivePath } from '../app/helper'
+import { useActivePath } from '../../app/helper'
 type NavigationItem = {
     href: string
     name: string

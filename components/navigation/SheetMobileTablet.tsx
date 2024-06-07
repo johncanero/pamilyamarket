@@ -28,7 +28,7 @@ import { motion } from "framer-motion"
 const SheetClose = SheetPrimitive.Close
 
 // navigaiton links
-import { useActivePath } from '../app/helper'
+import { useActivePath } from '../../app/helper'
 
 // Reference: https://nikolasbarwicki.com/articles/highlight-currently-active-link-in-nextjs-13-with-app-router/
 
