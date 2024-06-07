@@ -27,7 +27,14 @@ import { motion } from "framer-motion"
 
 const SheetClose = SheetPrimitive.Close
 
+// navigaiton links
+import { useActivePath } from '../app/helper'
+
+// Reference: https://nikolasbarwicki.com/articles/highlight-currently-active-link-in-nextjs-13-with-app-router/
+
 const SheetMobileTablet = () => {
+    const checkActivePath = useActivePath()
+
     return (
         <Sheet>
             <SheetTrigger>
@@ -73,10 +80,11 @@ const SheetMobileTablet = () => {
                             {/* Home */}
                             <Link
                                 href="/"
+                                className={`active ${checkActivePath("/") ? 'font-semibold text-amber-600' : ''}`}
 
                             >
                                 <SheetPrimitive.Close>
-                                    <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
+                                    <div className='grid grid-cols-7 px-3 hover:bg-orange-200 hover:rounded-xl'>
                                         <TiHome size={24} className='text-amber-600' />
                                         <p className='text-lg'>Home</p>
                                     </div>
@@ -86,6 +94,7 @@ const SheetMobileTablet = () => {
                             {/* Location */}
                             <Link
                                 href="/location"
+                                className={`active ${checkActivePath("/location") ? 'font-semibold text-amber-600' : ''}`}
                             >
                                 <SheetPrimitive.Close>
                                     <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
@@ -98,6 +107,7 @@ const SheetMobileTablet = () => {
                             {/* Blueprint */}
                             <Link
                                 href="/blueprint"
+                                className={`active ${checkActivePath("/blueprint") ? 'font-semibold text-amber-600' : ''}`}
                             >
                                 <SheetPrimitive.Close>
                                     <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
@@ -110,6 +120,7 @@ const SheetMobileTablet = () => {
                             {/* Design */}
                             <Link
                                 href="/design"
+                                className={`active ${checkActivePath("/design") ? 'font-semibold text-amber-600' : ''}`}
                             >
                                 <SheetPrimitive.Close>
                                     <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
@@ -122,6 +133,7 @@ const SheetMobileTablet = () => {
                             {/* Registration */}
                             <Link
                                 href="/registration"
+                                className={`active ${checkActivePath("/registration") ? 'font-semibold text-amber-600' : ''}`}
                             >
                                 <SheetPrimitive.Close>
                                     <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
@@ -144,6 +156,7 @@ const SheetMobileTablet = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="http://m.me/pamilyamarketph"
+                                    className={`active ${checkActivePath("http://m.me/pamilyamarketph") ? 'font-semibold text-amber-600' : ''}`}
                                 >
                                     <div className='flex gap-x-4 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
                                         <BsMessenger size={16} className='ml-1 mt-1 text-amber-600' />
