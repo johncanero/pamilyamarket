@@ -45,6 +45,7 @@ const NavbarMenu = () => {
                         </Link>
                     </motion.div>
 
+                    {/* pages */}
                     <ul className='flex gap-x-8 ml-10 mt-1'>
                         {navigation.map(({ href, name }) => (
                             <li key={href}>

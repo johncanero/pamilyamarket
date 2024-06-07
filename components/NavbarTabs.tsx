@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client"
+'use client';
 
 import Link from "next/link"
 import Image from "next/image"
@@ -9,39 +9,52 @@ import {
     TabsList,
     TabsTrigger,
 } from "@/components/ui/tabs-pamilya"
-import { Button } from "@/components/ui/button"
-
-import { MapPinned } from 'lucide-react';
-import { BsMessenger } from "react-icons/bs";
-
-import SheetMobileTablet from "./SheetMobileTablet";
-
 import { motion } from "framer-motion"
+
+
+// navigaiton links
+import { useActivePath } from '../app/helper'
+type NavigationItem = {
+    href: string
+    name: string
+}
+
+const navigation: NavigationItem[] = [
+    { href: '/', name: 'Pamilya' },
+    { href: '/location', name: 'Location' },
+]
+
+
+import { BsMessenger } from "react-icons/bs";
+import SheetMobileTablet from "./SheetMobileTablet";
 import NavbarMobileTagline from "./NavbarMobileTagline"
 
 export function NavbarTabs() {
+    const checkActivePath = useActivePath()
+
     return (
         <div className="lg:flex lg:justify-between lg:px-16">
             {/* Desktop */}
             <Tabs defaultValue="home" className="hidden lg:block md:w-[240px]">
                 <TabsList className="grid w-full grid-cols-2 gap-x-1">
-                    {/* Pamilya */}
-                    <Link href="/">
-                        <TabsTrigger value="home">
-                            <div className="flex md:gap-x-1">
-                                <p className="md:text-base text-sm">Pamilya</p>
-                            </div>
-                        </TabsTrigger>
-                    </Link>
-
-                    {/* Location */}
-                    <Link href="/location">
-                        <TabsTrigger value="location">
-                            <div className="flex gap-x-1">
-                                <p className="md:text-base text-sm">Location</p>
-                            </div>
-                        </TabsTrigger>
-                    </Link>
+                    {/* pages */}
+                    <ul className="flex gap-x-2">
+                        {navigation.map(({ href, name }) => (
+                            <li key={href}>
+                                <Link
+                                    rel="noopener noreferrer"
+                                    href={href}
+                                    className={`active ${checkActivePath(href) ? '' : ''}`}
+                                >
+                                    <TabsTrigger value={href}>
+                                        <div className="flex md:gap-x-1">
+                                            <span className="md:text-base text-sm">{name}</span>
+                                        </div>
+                                    </TabsTrigger>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </TabsList>
             </Tabs>
 
