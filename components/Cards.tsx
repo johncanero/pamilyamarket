@@ -5,44 +5,111 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
 
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+
 const Cards = () => {
     return (
         <div>
             {/* Cards - Products */}
-            {/* Meat Card */}
-            <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg md:mx-10 mx-5">
-                {/* Card - Meat Contents */}
-                <div
-                    className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-                    {/* Card - Meat */}
-                    <Image
-                        src="/images/home/card05-meat.png"
-                        width={1000}
-                        height={1000}
-                        alt="meat-card-product" />
+            <div className='md:mx-10 mx-5 '>
+                <Carousel
+                    opts={{
+                        align: "start",
+                    }}
+                    className="w-full max-w-sm md:max-w-full lg:max-w-full"
+                >
+                    <CarouselContent>
+                        {/* Vegetables Card */}
+                        <CarouselItem
+                            className="md:basis-1/2 lg:basis-1/4"
+                        >
+                            <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+                                {/* Card - Vegetables Contents */}
+                                <div
+                                    className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
+                                    {/* Card - Vegetables */}
+                                    <Image
+                                        src="/images/home/card07-vegetables.png"
+                                        width={1000}
+                                        height={1000}
+                                        alt="vegetables-card-product" />
 
-                    {/* Black Gradient */}
-                    <div
-                        className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
-                    </div>
+                                    {/* Black Gradient */}
+                                    <div
+                                        className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
+                                    </div>
 
-                    {/* Card - Product */}
-                    <p
-                        className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
-                        Meat
-                    </p>
-                </div>
-                
-                {/* Card - Meat Button */}
-                <div>
-                    <button
-                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                        type="button">
-                        Browse Products
-                    </button>
-                </div>
+                                    {/* Card - Product */}
+                                    <p
+                                        className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
+                                        Vegetables
+                                    </p>
+                                </div>
+
+                                {/* Card - Vegetables Button */}
+                                <div>
+                                    <button
+                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                        type="button">
+                                        Browse Vegetables
+                                    </button>
+                                </div>
+                            </div>
+                        </CarouselItem>
+
+                        {/* Meat Card */}
+                        <CarouselItem
+                            className="md:basis-1/2 lg:basis-1/4"
+                        >
+                            <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+                                {/* Card - Meat Contents */}
+                                <div
+                                    className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
+                                    {/* Card - Meat */}
+                                    <Image
+                                        src="/images/home/card05-meat.png"
+                                        width={1000}
+                                        height={1000}
+                                        alt="meat-card-product" />
+
+                                    {/* Black Gradient */}
+                                    <div
+                                        className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
+                                    </div>
+
+                                    {/* Card - Product */}
+                                    <p
+                                        className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
+                                        Meat
+                                    </p>
+                                </div>
+
+                                {/* Card - Meat Button */}
+                                <div>
+                                    <button
+                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                        type="button">
+                                        Browse Meat
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </CarouselItem>
+                       
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                </Carousel>
+
             </div>
-        
 
             {/* Cards - Pages*/}
             <div className="mb-12">
