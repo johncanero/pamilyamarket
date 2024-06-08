@@ -26,7 +26,7 @@ export default function Home() {
           width={350}
           height={350}
           alt="pamilya-market-logo"
-          className="mx-auto lg:my-28 my-16 max-w-xs md:max-w-full"
+          className="mx-auto lg:my-24 my-16 max-w-xs md:max-w-full"
         />
       </motion.div>
 
