@@ -23,7 +23,7 @@ const Cards = () => {
                     opts={{
                         align: "start",
                     }}
-                    className="w-full max-w-sm md:max-w-full lg:max-w-full"
+                    className="w-full max-w-xs md:max-w-full lg:max-w-full"
                 >
                     <CarouselContent className='gap-x-2'>
                         {/* Meat Card */}
@@ -143,7 +143,6 @@ const Cards = () => {
 
 
                         </CarouselItem>
-                       
                     </CarouselContent>
                     <CarouselPrevious />
                     <CarouselNext />
