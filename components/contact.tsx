@@ -19,17 +19,17 @@ const Contact: FC = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className='mb-5'>
+      <div className='mb-5 md:w-96'>
         <label
           htmlFor='name'
           className='mb-3 block text-base font-medium text-black'
         >
-          Full Name
+          Name
         </label>
         <input
           type='text'
           placeholder='Full Name'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-amber-500 focus:shadow-md'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-5 text-base font-medium text-gray-700 outline-none focus:border-amber-500 focus:shadow-md'
           {...register('name', { required: true })}
         />
       </div>
@@ -42,8 +42,8 @@ const Contact: FC = () => {
         </label>
         <input
           type='email'
-          placeholder='example@domain.com'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-amber-500 focus:shadow-md'
+          placeholder='name@example.com'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-5 text-base font-medium text-gray-700 outline-none focus:border-amber-500 focus:shadow-md'
           {...register('email', { required: true })}
         />
       </div>
@@ -55,14 +55,14 @@ const Contact: FC = () => {
           Message
         </label>
         <textarea
-          rows={4}
+          rows={6}
           placeholder='Type your message'
-          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-amber-500 focus:shadow-md'
+          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-5 text-base font-medium text-gray-700 outline-none focus:border-amber-500 focus:shadow-md'
           {...register('message', { required: true })}
         ></textarea>
       </div>
-      <div>
-        <button className='hover:shadow-form rounded-md bg-amber-500 py-3 px-8 text-base font-semibold text-white outline-none'>
+      <div className='flex justify-end'>
+        <button className='hover:shadow-form rounded-2xl bg-amber-500 py-3 px-8 text-base font-semibold text-white outline-none'>
           Submit
         </button>
       </div>
