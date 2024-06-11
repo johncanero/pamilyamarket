@@ -17,13 +17,13 @@ import {
 const Cards = () => {
     return (
         <div>
-            {/* Cards - Products */}
+           {/* Cards - Products */}
             <div className='md:mx-10 mx-5 '>
                 <Carousel
                     opts={{
                         align: "start",
                     }}
-                    className="w-full max-w-xs md:max-w-full lg:max-w-full"
+                    className="w-full max-w-xs md:max-w-2xl lg:max-w-full"
                 >
                     <CarouselContent className='gap-x-2'>
                         {/* Meat Card */}
