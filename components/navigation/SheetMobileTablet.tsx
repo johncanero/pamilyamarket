@@ -22,6 +22,7 @@ import { BsMessenger } from "react-icons/bs";
 import { MdSpaceDashboard } from "react-icons/md";
 import { FaRegRegistered } from "react-icons/fa6";
 import { MdArchitecture } from "react-icons/md";
+import { MdConnectWithoutContact } from "react-icons/md";
 
 import { motion } from "framer-motion"
 
@@ -139,6 +140,19 @@ const SheetMobileTablet = () => {
                                     <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
                                         <FaRegRegistered size={17} className='ml-1 mt-1 text-amber-600' />
                                         <p className='text-lg'>Registration</p>
+                                    </div>
+                                </SheetPrimitive.Close>
+                            </Link>
+
+                            {/* Contact */}
+                            <Link
+                                href="/contact-us"
+                                className={`active ${checkActivePath("/contact-us") ? 'font-semibold text-amber-600' : ''}`}
+                            >
+                                <SheetPrimitive.Close>
+                                    <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
+                                        <MdConnectWithoutContact size={17} className='ml-1 mt-1 text-amber-600' />
+                                        <p className='text-lg'>Contact</p>
                                     </div>
                                 </SheetPrimitive.Close>
                             </Link>

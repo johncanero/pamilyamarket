@@ -27,6 +27,8 @@ const page = () => {
                     <p className='text-amber-600 text-lg lg:text-2xl'>.</p>
                 </div>
             </div>
+
+            {/* https://medium.com/@abilsavio/email-contact-form-using-nextjs-app-router-60c29fe70644 */}
         </div>
     )
 }
