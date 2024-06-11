@@ -151,7 +151,7 @@ const SheetMobileTablet = () => {
                             >
                                 <SheetPrimitive.Close>
                                     <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
-                                        <MdConnectWithoutContact size={17} className='ml-1 mt-1 text-amber-600' />
+                                        <MdConnectWithoutContact size={19} className='ml-1 mt-1 text-amber-600' />
                                         <p className='text-lg'>Contact</p>
                                     </div>
                                 </SheetPrimitive.Close>
