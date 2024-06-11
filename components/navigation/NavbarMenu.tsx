@@ -17,6 +17,7 @@ const navigation: NavigationItem[] = [
     { href: '/blueprint', name: 'Blueprint' },
     { href: '/design', name: 'Design' },
     { href: '/registration', name: 'Registration' },
+    { href: '/contact-us', name: 'Contact' },
 ]
 
 // Reference: https://nikolasbarwicki.com/articles/highlight-currently-active-link-in-nextjs-13-with-app-router/
