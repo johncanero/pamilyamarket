@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion"
-import Cards from "@/components/cards";
+import Cards from "@/components/Cards";
 
 const hover = {
   variantA: { scale: 1 },
