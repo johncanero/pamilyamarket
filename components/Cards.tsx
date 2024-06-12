@@ -17,8 +17,8 @@ import {
 const Cards = () => {
     return (
         <div>
-           {/* Cards - Products */}
-            <div className='md:mx-10 mx-5 '>
+            {/* Cards - Products - Desktop */}
+            <div className='md:mx-10 mx-5 hidden lg:block'>
                 <Carousel
                     opts={{
                         align: "start",
@@ -167,11 +167,11 @@ const Cards = () => {
                                     {/* Card - Product */}
                                     <p
                                         className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
-                                        Grocery 
+                                        Grocery
                                     </p>
                                 </div>
 
-                                {/* Card - Chicken Button */}
+                                {/* Card - Grcery Button */}
                                 <div>
                                     <button
                                         className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -265,6 +265,139 @@ const Cards = () => {
 
             </div>
 
+            {/* Cards - Products: Meat, Vegetables  Chicken - Mobile & Tablet */}
+            <div className='md:mx-10 mx-5 block lg:hidden'>
+                <Carousel
+                    opts={{
+                        align: "start",
+                    }}
+                    className="w-full max-w-xs md:max-w-2xl lg:max-w-full"
+                >
+                    <CarouselContent className='gap-x-2'>
+                        {/* Meat Card */}
+                        <CarouselItem
+                            className="md:basis-1/2 lg:basis-1/4"
+                        >
+                            <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
+                                {/* Card - Meat Contents */}
+                                <div
+                                    className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
+                                    {/* Card - Meat */}
+                                    <Image
+                                        src="/images/home/card05-meat.png"
+                                        width={1000}
+                                        height={1000}
+                                        alt="meat-card-product" />
+
+                                    {/* Black Gradient */}
+                                    <div
+                                        className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
+                                    </div>
+
+                                    {/* Card - Product */}
+                                    <p
+                                        className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
+                                        Meat
+                                    </p>
+                                </div>
+
+                                {/* Card - Meat Button */}
+                                <div>
+                                    <button
+                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                        type="button">
+                                        Browse Meat
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </CarouselItem>
+
+                        {/* Vegetables Card */}
+                        <CarouselItem
+                            className="md:basis-1/2 lg:basis-1/4"
+                        >
+                            <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
+                                {/* Card - Vegetables Contents */}
+                                <div
+                                    className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
+                                    {/* Card - Vegetables */}
+                                    <Image
+                                        src="/images/home/card07-vegetables.png"
+                                        width={1000}
+                                        height={1000}
+                                        alt="vegetables-card-product" />
+
+                                    {/* Black Gradient */}
+                                    <div
+                                        className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
+                                    </div>
+
+                                    {/* Card - Product */}
+                                    <p
+                                        className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
+                                        Vegetables
+                                    </p>
+                                </div>
+
+                                {/* Card - Vegetables Button */}
+                                <div>
+                                    <button
+                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                        type="button">
+                                        Browse Vegetables
+                                    </button>
+                                </div>
+                            </div>
+                        </CarouselItem>
+
+                        {/* Chicken Card */}
+                        <CarouselItem
+                            className="md:basis-1/2 lg:basis-1/4"
+                        >
+                            <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
+                                {/* Card - Chicken Contents */}
+                                <div
+                                    className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
+                                    {/* Card - Chicken */}
+                                    <Image
+                                        src="/images/home/card06-chicken.png"
+                                        width={1000}
+                                        height={1000}
+                                        alt="chicken-card-product" />
+
+                                    {/* Black Gradient */}
+                                    <div
+                                        className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
+                                    </div>
+
+                                    {/* Card - Product */}
+                                    <p
+                                        className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
+                                        Chicken
+                                    </p>
+                                </div>
+
+                                {/* Card - Chicken Button */}
+                                <div>
+                                    <button
+                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                        type="button">
+                                        Browse Chicken
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                </Carousel>
+
+            </div>
+
             {/* Cards - Pages*/}
             <div className="mb-12">
                 {/* Location */}
@@ -340,6 +473,137 @@ const Cards = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Cards - Products: Grocery Stall, Buko Stall & Fish Stall - Mobile & Tablet */}
+                <div className='md:mx-10 mx-5 block lg:hidden'>
+                    <Carousel
+                        opts={{
+                            align: "start",
+                        }}
+                        className="w-full max-w-xs md:max-w-2xl lg:max-w-full"
+                    >
+                        <CarouselContent className='gap-x-2'>
+                            {/* Grocery Stall Card */}
+                            <CarouselItem
+                                className="md:basis-1/2 lg:basis-1/4"
+                            >
+                                <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
+                                    {/* Card - Grocery Stall Contents */}
+                                    <div
+                                        className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
+                                        {/* Card - Grocery Stall */}
+                                        <Image
+                                            src="/images/home/card08-grocery.png"
+                                            width={1000}
+                                            height={1000}
+                                            alt="grocery-stall-card-product" />
+
+                                        {/* Black Gradient */}
+                                        <div
+                                            className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
+                                        </div>
+
+                                        {/* Card - Product */}
+                                        <p
+                                            className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
+                                            Grocery
+                                        </p>
+                                    </div>
+
+                                    {/* Card - Grcery Button */}
+                                    <div>
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Grocery Stall
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </CarouselItem>
+
+                            {/* Buko Card */}
+                            <CarouselItem
+                                className="md:basis-1/2 lg:basis-1/4"
+                            >
+                                <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
+
+                                    <div
+                                        className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
+
+                                        <Image
+                                            src="/images/home/card09-buko.png"
+                                            width={1000}
+                                            height={1000}
+                                            alt="buko-card-product" />
+
+                                        <div
+                                            className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
+                                        </div>
+
+                                        <p
+                                            className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
+                                            Buko
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Buko Stall
+                                        </button>
+                                    </div>
+                                </div>
+                            </CarouselItem>
+
+                            {/* Fish Card */}
+                            <CarouselItem
+                                className="md:basis-1/2 lg:basis-1/4"
+                            >
+                                <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
+                                    {/* Card - Fish Contents */}
+                                    <div
+                                        className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
+                                        {/* Card - Fish */}
+                                        <Image
+                                            src="/images/home/card10-fish.png"
+                                            width={1000}
+                                            height={1000}
+                                            alt="fish-card-product" />
+
+                                        {/* Black Gradient */}
+                                        <div
+                                            className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
+                                        </div>
+
+                                        {/* Card - Product */}
+                                        <p
+                                            className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
+                                            Fish
+                                        </p>
+                                    </div>
+
+                                    {/* Card - Grocery Button */}
+                                    <div>
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Fish Stall
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </CarouselItem>
+                         
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </Carousel>
+                </div>
+
 
                 {/* Floor Plan */}
                 <div className="p-5 md:p-10 antialiased ">
