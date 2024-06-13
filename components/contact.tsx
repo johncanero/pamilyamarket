@@ -20,12 +20,11 @@ const Contact: FC = () => {
   return (
     <form 
     onSubmit={handleSubmit(onSubmit)}
-    className='py-20'
     >
-      <div className='mb-5 md:w-96'>
+      <div className='mb-5'>
         <label
           htmlFor='name'
-          className='mb-3 block text-base font-medium text-black'
+          className='mb-2 block text-base font-medium text-black'
         >
           Name
         </label>
@@ -39,7 +38,7 @@ const Contact: FC = () => {
       <div className='mb-5'>
         <label
           htmlFor='email'
-          className='mb-3 block text-base font-medium text-black'
+          className='mb-2 block text-base font-medium text-black'
         >
           Email Address
         </label>
@@ -53,19 +52,19 @@ const Contact: FC = () => {
       <div className='mb-5'>
         <label
           htmlFor='message'
-          className='mb-3 block text-base font-medium text-black'
+          className='mb-2 block text-base font-medium text-black'
         >
           Message
         </label>
         <textarea
           rows={6}
           placeholder='Type your message'
-          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-5 text-base font-medium text-gray-700 outline-none focus:border-amber-500 focus:shadow-md'
+          className='w-full resize-none min-h-[auto] rounded-md border border-gray-300 bg-white py-3 px-5 text-base font-medium text-gray-700 outline-none focus:border-amber-500 focus:shadow-md'
           {...register('message', { required: true })}
         ></textarea>
       </div>
       <div className='flex justify-end'>
-        <button className='hover:shadow-form rounded-2xl bg-amber-500 py-3 px-8 text-base font-semibold text-white outline-none'>
+        <button className='hover:shadow-form w-full rounded-lg bg-amber-500 py-3 px-8 text-base font-semibold text-white outline-none'>
           Submit
         </button>
       </div>
