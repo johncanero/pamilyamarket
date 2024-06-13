@@ -67,7 +67,7 @@ const page = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
                   <div className="flex items-start">
                     <div className="srink-0">
-                      <div className="inline-block rounded-md bg-sky-200 p-4 text-primary">
+                      <div className="inline-block rounded-md bg-orange-200 p-4 text-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                           stroke="currentColor" className="w-7 h-7">
                           <path stroke-linecap="round" stroke-linejoin="round"
