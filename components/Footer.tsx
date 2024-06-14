@@ -371,12 +371,14 @@ const Footer = () => {
                         <br></br>
 
                         {/* Contact */}
-                        <button // Security best practice
-                            className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
-                            onClick={scrollToTop}
+                        <Link
+                            // target="_blank"
+                            rel="noopener noreferrer"
+                            href="/contact-us/contact-form"
+                            className='text-white text-lg hover:underline hover:opacity-50'
                         >
                             Contact
-                        </button>
+                        </Link>
 
                         <br></br>
                         <br></br>
