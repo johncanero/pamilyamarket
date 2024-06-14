@@ -50,42 +50,54 @@ const page = () => {
       </div>
 
       {/* Google Images */}
-      <div className='md:flex md:flex-wrap mb-16 mx-8 lg:mx-24'>
+      <div className='md:flex md:flex-wrap mb-16 mx-8 lg:mx-44'>
         <Image
           src="/images/location/post3-streetView1-compressed.png"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           alt="pamilya-market-location"
           className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
         />
         <Image
           src="/images/location/post3-streetView2-compressed.png"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           alt="pamilya-market-location"
           className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
         />
         <Image
           src="/images/location/post3-streetView3-compressed.png"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           alt="pamilya-market-location"
           className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
         />
         <Image
           src="/images/location/post3-streetView4-compressed.png"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           alt="pamilya-market-location"
           className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
         />
-        {/* <Image
+        <Image
           src="/images/location/post3-streetView5-compressed.png"
-          width={600}
-          height={600}
+          width={400}
+          height={400}
           alt="pamilya-market-location"
-          className="mx-auto max-w-xs my-7 lg:max-w-full rounded-2xl lg:rounded-3xl"
-        /> */}
+          className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
+        />
+      </div>
+      {/* Google Maps */}
+      <div id="map" className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.2295261507816!2d121.06072541091176!3d14.699608074585264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1dd3343495d%3A0xd4a83e448732ebe7!2sPamilya%20Market!5e0!3m2!1sen!2sus!4v1718303939663!5m2!1sen!2sus"
+          loading="lazy"
+          className='w-screen border-0'
+          width="600" height="450"
+          allowFullScreen
+          referrerPolicy='no-referrer-when-downgrade'
+        >
+        </iframe>
       </div>
     </div>
   )
