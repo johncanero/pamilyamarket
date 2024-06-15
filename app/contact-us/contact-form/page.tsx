@@ -20,8 +20,8 @@ const page = () => {
       </div>
 
       {/* Contact Us */}
-      <div className="container px-6 md:px-12 shadow-md rounded-b-3xl">
-        <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[72px] backdrop-blur-[30px]">
+      <div className="container px-6 md:px-12">
+        <div className="block rounded-2xl bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[72px] backdrop-blur-[30px]">
           <h1 className='text-center pb-16 text-2xl lg:text-3xl text-amber-600 font-bold'>Contact Us</h1>
           <div className="flex flex-wrap">
             {/* Contact Component */}
