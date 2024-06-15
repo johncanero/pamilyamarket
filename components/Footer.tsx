@@ -111,12 +111,14 @@ const Footer = () => {
                 {/* Other Pages */}
                 <div>
                     {/* About Pamilya Market */}
-                    <button // Security best practice
-                        className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
-                        onClick={scrollToTop}
+                    <Link
+                        // target="_blank"
+                        rel="noopener noreferrer"
+                        href="/company/about-pamilya"
+                        className='text-white text-lg hover:underline hover:opacity-50'
                     >
                         About Pamilya Market
-                    </button>
+                    </Link>
 
                     <br></br>
                     <br></br>
@@ -300,12 +302,14 @@ const Footer = () => {
                         {/* About Pamilya Market -> Accessibility */}
                         <div>
                             {/* About Pamilya Market */}
-                            <button // Security best practice
-                                className={`text-white text-lg hover:underline hover:opacity-50 ${isVisible ? 'visible' : ''}`}  // Combine classnames
-                                onClick={scrollToTop}
+                            <Link
+                                // target="_blank"
+                                rel="noopener noreferrer"
+                                href="/company/about-pamilya"
+                                className='text-white text-lg hover:underline hover:opacity-50'
                             >
                                 About Pamilya Market
-                            </button>
+                            </Link>
 
 
                             <br></br>
