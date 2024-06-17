@@ -51,7 +51,7 @@ const page = () => {
 
       {/* Google Images */}
       <div className='md:flex md:flex-wrap mb-16 mx-8 lg:mx-44'>
-        <Image
+        {/* <Image
           src="/images/location/post3-streetView1-compressed.png"
           width={400}
           height={400}
@@ -71,7 +71,7 @@ const page = () => {
           height={400}
           alt="pamilya-market-location"
           className="mx-auto max-w-xs my-10 lg:max-w-full rounded-2xl lg:rounded-3xl"
-        />
+        /> */}
         {/* <Image
           src="/images/location/post3-streetView4-compressed.png"
           width={400}
