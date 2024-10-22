@@ -185,7 +185,7 @@ const Cards = () => {
                         </CarouselItem>
 
                         {/* Buko Card */}
-                        <CarouselItem
+                        {/* <CarouselItem
                             className="md:basis-1/2 lg:basis-1/4"
                         >
                             <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
@@ -217,7 +217,7 @@ const Cards = () => {
                                     </button>
                                 </div>
                             </div>
-                        </CarouselItem>
+                        </CarouselItem> */}
 
                         {/* Fish Card */}
                         <CarouselItem
