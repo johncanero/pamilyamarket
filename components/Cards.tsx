@@ -595,13 +595,12 @@ const Cards = () => {
                     </Carousel>
                 </div>
 
-
                 {/* Floor Plan */}
                 <div className="p-5 md:p-10 antialiased ">
                     <div
                         className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
                         <div className="lg:w-6/12  bg-amber-600 rounded-2xl lg:rounded-l-2xl lg:rounded-r-none">
-                            {/* Floor Plan - Mobile*/}
+                            {/* Blueprint - Mobile*/}
                             <div className="cursor-pointer">
                                 <Link
                                     // target="_blank"
@@ -609,7 +608,7 @@ const Cards = () => {
                                     href="/blueprint"
                                 >
                                     <Image
-                                        src="/images/home/card02floorPlan.png"
+                                        src="/images/home/PamilyaMarket_Blueprint_Compressed.jpg"
                                         width={1600}
                                         height={1600}
                                         alt="blueprint"
@@ -617,37 +616,27 @@ const Cards = () => {
                                     />
                                 </Link>
                             </div>
-
                             {/* Description */}
-                            <div className="p-5 pb-10">
-                                <h1 className="text-xl font-semibold text-white mt-4">
-                                    Blueprint - Floor Plan
-                                </h1>
-                                <p className=" text-lg text-white mt-2 leading-relaxed">
-                                    Navigate the spaces and areas of Pamilya Market
-                                </p>
-                            </div>
+                            <div className="py-8 lg:py-36">
+                                <div className="pb-4">
+                                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mt-4">
+                                        Blueprint
+                                    </h1>
+                                    <p className="text-md lg:text-lg justify-start text-white mt-2 mx-8 md:mx-32 lg:mx-20 leading-relaxed">
+                                        Navigate the spaces and areas of Pamilya Market
+                                    </p>
+                                </div>
 
-                            {/* Pamilya Market - logo */}
-                            <div className="flex justify-center">
-                                <Image
-                                    src="/images/home/pamilyaMarketLogoWhite.png"
-                                    width={200}
-                                    height={200}
-                                    alt="pamilya-market-logo"
-                                    className="rounded-2xl hidden lg:block"
-                                />
-                            </div>
-
-                            {/* Button */}
-                            <div className="flex justify-center mt-4 mb-8">
-                                <Link
-                                    // target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="/blueprint"
-                                >
-                                    <Button className="text-lg rounded-full py-8 px-16 font-semibold">Navigate Floor Plan</Button>
-                                </Link>
+                                {/* Button */}
+                                <div className="flex justify-center mt-4 mb-8">
+                                    <Link
+                                        // target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="/blueprint"
+                                    >
+                                        <Button className="text-lg rounded-full py-8 px-16 font-semibold">Navigate Floor Plan</Button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
 
@@ -659,7 +648,7 @@ const Cards = () => {
                                 href="/blueprint"
                             >
                                 <Image
-                                    src="/images/home/card02floorPlan.png"
+                                    src="/images/home/PamilyaMarket_Blueprint_Compressed.jpg"
                                     width={1600}
                                     height={1600}
                                     alt="blueprint"
@@ -683,7 +672,7 @@ const Cards = () => {
                                     href="/design"
                                 >
                                     <Image
-                                        src="/images/home/card04design-compressed.png"
+                                        src="/images/home/PamilyaMarket_Design_Compressed.jpg"
                                         width={1600}
                                         height={1600}
                                         alt="design"
@@ -693,35 +682,26 @@ const Cards = () => {
                             </div>
 
                             {/* Description */}
-                            <div className="p-5 pb-10">
-                                <h1 className="text-xl font-semibold text-white mt-4">
-                                    Design
-                                </h1>
-                                <p className=" text-lg text-white mt-2 leading-relaxed">
-                                    View the design of Pamilya Market
-                                </p>
-                            </div>
+                            <div className="py-8 lg:py-36">
+                                <div className="pb-4">
+                                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mt-4">
+                                        Design
+                                    </h1>
+                                    <p className="text-md lg:text-lg text-center text-white mt-2 mx-8 md:mx-32 lg:mx-20 leading-relaxed">
+                                        View the design of Pamilya Market
+                                    </p>
+                                </div>
 
-                            {/* Pamilya Market - logo */}
-                            <div className="flex justify-center">
-                                <Image
-                                    src="/images/home/pamilyaMarketLogoWhite.png"
-                                    width={200}
-                                    height={200}
-                                    alt="pamilya-market-logo"
-                                    className="rounded-2xl hidden lg:block"
-                                />
-                            </div>
-
-                            {/* Button */}
-                            <div className="flex justify-center mt-4 mb-8">
-                                <Link
-                                    // target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="/design"
-                                >
-                                    <Button className="text-lg rounded-full py-8 px-24 font-semibold">View Design</Button>
-                                </Link>
+                                {/* Button */}
+                                <div className="flex justify-center mt-4 mb-8">
+                                    <Link
+                                        // target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="/"
+                                    >
+                                        <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">View Design</Button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
 
@@ -733,7 +713,7 @@ const Cards = () => {
                                 href="/design"
                             >
                                 <Image
-                                    src="/images/home/card04design-compressed.png"
+                                    src="/images/home/PamilyaMarket_Design_Compressed.jpg"
                                     width={1600}
                                     height={1600}
                                     alt="blueprint"
@@ -757,7 +737,7 @@ const Cards = () => {
                                     href="/registration"
                                 >
                                     <Image
-                                        src="/images/home/card01dtiRegistartion.png"
+                                        src="/images/home/PamilyaMarket_Registration_compressed.png"
                                         width={1600}
                                         height={1600}
                                         alt="dti-registartion"
@@ -767,35 +747,26 @@ const Cards = () => {
                             </div>
 
                             {/* Description */}
-                            <div className="p-5 pb-10">
-                                <h1 className="text-xl font-semibold text-white mt-4">
-                                    DTI Registration - Pamilya Marketplace
-                                </h1>
-                                <p className=" text-lg text-white mt-2 leading-relaxed">
-                                    Located in Fairview, Quezon City, NCR - National Capital Region, Second District
-                                </p>
-                            </div>
+                            <div className="py-8 lg:py-36">
+                                <div className="pb-4">
+                                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mt-4">
+                                        DTI Registration 
+                                    </h1>
+                                    <p className="text-md lg:text-lg justify-start text-white mt-2 mx-8 md:mx-32 lg:mx-20 leading-relaxed">
+                                        Located in Fairview, Quezon City, NCR - National Capital Region, Second District
+                                    </p>
+                                </div>
 
-                            {/* Pamilya Market - logo */}
-                            <div className="flex justify-center">
-                                <Image
-                                    src="/images/home/pamilyaMarketLogoWhite.png"
-                                    width={200}
-                                    height={200}
-                                    alt="pamilya-market-logo"
-                                    className="rounded-2xl hidden lg:block"
-                                />
-                            </div>
-
-                            {/* Button */}
-                            <div className="flex justify-center mt-4 mb-8">
-                                <Link
-                                    // target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="/registration"
-                                >
-                                    <Button className="text-lg rounded-full py-8 px-20 font-semibold">See Registration</Button>
-                                </Link>
+                                {/* Button */}
+                                <div className="flex justify-center mt-4 mb-8">
+                                    <Link
+                                        // target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="/"
+                                    >
+                                        <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">See Registration</Button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
 
@@ -808,7 +779,7 @@ const Cards = () => {
                                 href="/registration"
                             >
                                 <Image
-                                    src="/images/home/card01dtiRegistartion.png"
+                                    src="/images/home/PamilyaMarket_Registration_compressed.png"
                                     width={1600}
                                     height={1600}
                                     alt="dti-registartion"
