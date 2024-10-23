@@ -416,7 +416,7 @@ const Cards = () => {
                                         src="/images/home/PamilyaMarket_Location_Compressed.jpg"
                                         width={1600}
                                         height={1600}
-                                        alt="location"
+                                        alt="Fresh"
                                         className="rounded-t-2xl lg:hidden"
                                     />
                                 </Link>
