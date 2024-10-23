@@ -46,7 +46,7 @@ export default function Home() {
                   src="/images/home/PamilyaMarket_Products_Compressed.jpg"
                   width={1600}
                   height={1600}
-                  alt="location"
+                  alt="products"
                   className="rounded-t-2xl lg:hidden"
                 />
               </Link>
@@ -86,7 +86,7 @@ export default function Home() {
                 src="/images/home/PamilyaMarket_Products_Compressed.jpg"
                 width={1600}
                 height={1600}
-                alt="location"
+                alt="products"
                 className="rounded-r-2xl hidden lg:block"
               />
             </Link>
