@@ -30,20 +30,20 @@ export default function Home() {
         />
       </motion.div> */}
 
-      {/* Main Feature */}
+
       <div className="p-5 md:p-10 antialiased">
         <div
           className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
           <div className="lg:w-6/12  bg-amber-600 rounded-2xl lg:rounded-l-2xl lg:rounded-r-none">
-            {/* Main Feature - Mobile*/}
             <div className="cursor-pointer">
+              {/* Mobile */}
               <Link
                 // target="_blank"
                 rel="noopener noreferrer"
-                href="/location"
+                href="/"
               >
                 <Image
-                  src="/images/home/BusinessProducts.jpg"
+                  src="/images/home/PamilyaMarket_Products_Compressed.jpg"
                   width={1600}
                   height={1600}
                   alt="location"
@@ -52,45 +52,35 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Description */}
-            <div className="p-5 pb-10">
-              <h1 className="text-xl font-semibold text-white mt-4">
-                Menu
-              </h1>
-              <p className=" text-lg text-white mt-2 leading-relaxed">
-                Discover the products of Pamilya Market
-              </p>
-            </div>
+            <div className="py-8 lg:py-36">
+              <div className="pb-4">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mt-4">
+                  Fresh
+                </h1>
+                <p className="text-md lg:text-lg justify-start text-white mt-2 mx-8 md:mx-32 lg:mx-20 leading-relaxed">
+                  Discover and find fresh products of Pamilya Market. <span className="font-semibold">Chicken, Pork, Beef, Fish, Vegetables & Ingredients!</span>
+                </p>
+              </div>
 
-            {/* Pamilya Market - logo */}
-            <div className="flex justify-center">
-              <Image
-                src="/images/home/pamilyaMarketLogoWhite.png"
-                width={200}
-                height={200}
-                alt="pamilya-market-logo"
-                className="rounded-2xl hidden lg:block"
-              />
-            </div>
-
-            {/* Button */}
-            <div className="flex justify-center mt-4 mb-8">
-              <Link
-                // target="_blank"
-                rel="noopener noreferrer"
-                href=""
-              >
-                <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">Explore Products</Button>
-              </Link>
+              {/* Button */}
+              <div className="flex justify-center mt-4 mb-8">
+                <Link
+                  // target="_blank"
+                  rel="noopener noreferrer"
+                  href="/"
+                >
+                  <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">Explore Products</Button>
+                </Link>
+              </div>
             </div>
           </div>
 
-          {/* Main Feature - Desktop */}
+          {/* Tablet & Desktop */}
           <div className="cursor-pointer">
             <Link
               // target="_blank"
               rel="noopener noreferrer"
-              href=""
+              href="/"
             >
               <Image
                 src="/images/home/BusinessProducts.jpg"
