@@ -51,7 +51,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-
+            {/* Description */}
             <div className="py-8 lg:py-36">
               <div className="pb-4">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mt-4">

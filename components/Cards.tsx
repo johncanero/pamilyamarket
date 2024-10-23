@@ -413,7 +413,7 @@ const Cards = () => {
                                     href="/location"
                                 >
                                     <Image
-                                        src="/images/home/card03Location.png"
+                                        src="/images/home/PamilyaMarket_Location_Compressed.jpg"
                                         width={1600}
                                         height={1600}
                                         alt="location"
@@ -423,35 +423,26 @@ const Cards = () => {
                             </div>
 
                             {/* Description */}
-                            <div className="p-5 pb-10">
-                                <h1 className="text-xl font-semibold text-white mt-4">
-                                    Location
-                                </h1>
-                                <p className=" text-lg text-white mt-2 leading-relaxed">
-                                    Discover the location of Pamilya Market
-                                </p>
-                            </div>
+                            <div className="py-8 lg:py-36">
+                                <div className="pb-4">
+                                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mt-4">
+                                        Where?
+                                    </h1>
+                                    <p className="text-md lg:text-lg justify-start text-white mt-2 mx-8 md:mx-32 lg:mx-20 leading-relaxed">
+                                        Discover the <span className='font-bold'>location</span> of Pamilya Market.
+                                    </p>
+                                </div>
 
-                            {/* Pamilya Market - logo */}
-                            <div className="flex justify-center">
-                                <Image
-                                    src="/images/home/pamilyaMarketLogoWhite.png"
-                                    width={200}
-                                    height={200}
-                                    alt="pamilya-market-logo"
-                                    className="rounded-2xl hidden lg:block"
-                                />
-                            </div>
-
-                            {/* Button */}
-                            <div className="flex justify-center mt-4 mb-8">
-                                <Link
-                                    // target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="/location"
-                                >
-                                    <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">Explore Pamilya Market</Button>
-                                </Link>
+                                {/* Button */}
+                                <div className="flex justify-center mt-4 mb-8">
+                                    <Link
+                                        // target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="/location"
+                                    >
+                                        <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">Explore Pamilya Market</Button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
 
@@ -463,7 +454,7 @@ const Cards = () => {
                                 href="/location"
                             >
                                 <Image
-                                    src="/images/home/card03Location.png"
+                                    src="/images/home/PamilyaMarket_Location_Compressed.jpg"
                                     width={1600}
                                     height={1600}
                                     alt="location"
@@ -597,7 +588,7 @@ const Cards = () => {
 
 
                             </CarouselItem>
-                         
+
                         </CarouselContent>
                         <CarouselPrevious />
                         <CarouselNext />
