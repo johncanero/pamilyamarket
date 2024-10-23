@@ -83,7 +83,7 @@ export default function Home() {
               href="/"
             >
               <Image
-                src="/images/home/BusinessProducts.jpg"
+                src="/images/home/PamilyaMarket_Products_Compressed.jpg"
                 width={1600}
                 height={1600}
                 alt="location"
