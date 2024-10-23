@@ -622,7 +622,7 @@ const Cards = () => {
                                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mt-4">
                                         Blueprint
                                     </h1>
-                                    <p className="text-md lg:text-lg justify-start text-white mt-2 mx-8 md:mx-32 lg:mx-20 leading-relaxed">
+                                    <p className="text-md lg:text-lg text-center text-white mt-2 mx-8 md:mx-32 lg:mx-20 leading-relaxed">
                                         Navigate the spaces and areas of Pamilya Market
                                     </p>
                                 </div>
