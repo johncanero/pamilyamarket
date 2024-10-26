@@ -12,7 +12,7 @@ import {
 const Products = () => {
     return (
         <div>
-            <h2 className='text-lg mb-4'>
+            <h2 className='lg:text-lg mb-4'>
                 Meat Products
             </h2>
             <Table>
@@ -24,8 +24,19 @@ const Products = () => {
                     </TableRow>
                 </TableHeader>
                 <TableBody>
+                    {/* Whole Chicken */}
                     <TableRow>
                         <TableCell className="font-medium">Whole Chicken</TableCell>
+                        <TableCell>Chicken</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className="font-medium">Legs</TableCell>
+                        <TableCell>Chicken</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className="font-medium">Breast</TableCell>
                         <TableCell>Chicken</TableCell>
                     </TableRow>
                 </TableBody>

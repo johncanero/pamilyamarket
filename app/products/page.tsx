@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 const page = () => {
     return (
         <div className="flex flex-col">
-            <div className='mt-8 lg:mb-16 mx-auto'>
-                <div className='lg:w-[1000px]'>
+            <div className='mt-8 mb-24 mx-auto'>
+                <div className='w-[300px] md:w-[600px] lg:w-[1000px]'>
                     <MeatProducts />
                 </div>
             </div>
