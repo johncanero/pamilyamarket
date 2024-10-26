@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion"
 import Cards from "@/components/Cards";
 import { Button } from "@/components/ui/button"
 
@@ -14,23 +13,7 @@ const hover = {
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Pamilya Market Logo */}
-      {/* <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        variants={hover}
-        whileHover={"variantB"}
-      >
-        <Image
-          src="/images/logo/pamilyaMarketLogo.png"
-          width={350}
-          height={350}
-          alt="pamilya-market-logo"
-          className="mx-auto lg:my-24 my-16 max-w-xs md:max-w-full"
-        />
-      </motion.div> */}
-
-
+      {/* Main Card */}
       <div className="p-5 md:p-10 antialiased">
         <div
           className=" flex flex-wrap md:flex-nowrap shadow-lg mx-auto rounded-2xl group transform duration-500 hover:-translate-y-1">
@@ -38,7 +21,6 @@ export default function Home() {
             <div className="cursor-pointer">
               {/* Mobile */}
               <Link
-                // target="_blank"
                 rel="noopener noreferrer"
                 href="/"
               >
@@ -78,7 +60,6 @@ export default function Home() {
           {/* Tablet & Desktop */}
           <div className="cursor-pointer">
             <Link
-              // target="_blank"
               rel="noopener noreferrer"
               href="/"
             >
@@ -94,7 +75,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Cards */}
       <Cards />
     </div >
   );

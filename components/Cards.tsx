@@ -180,44 +180,7 @@ const Cards = () => {
                                     </button>
                                 </div>
                             </div>
-
-
                         </CarouselItem>
-
-                        {/* Buko Card */}
-                        {/* <CarouselItem
-                            className="md:basis-1/2 lg:basis-1/4"
-                        >
-                            <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
-
-                                <div
-                                    className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
-
-                                    <Image
-                                        src="/images/home/card09-buko.png"
-                                        width={1000}
-                                        height={1000}
-                                        alt="buko-card-product" />
-
-                                    <div
-                                        className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
-                                    </div>
-
-                                    <p
-                                        className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
-                                        Buko
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <button
-                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                        type="button">
-                                        Browse Buko Stall
-                                    </button>
-                                </div>
-                            </div>
-                        </CarouselItem> */}
 
                         {/* Fish Card */}
                         <CarouselItem
@@ -408,7 +371,6 @@ const Cards = () => {
                             {/* Location - Mobile*/}
                             <div className="cursor-pointer">
                                 <Link
-                                    // target="_blank"
                                     rel="noopener noreferrer"
                                     href="/location"
                                 >
@@ -436,7 +398,6 @@ const Cards = () => {
                                 {/* Button */}
                                 <div className="flex justify-center mt-4 mb-8">
                                     <Link
-                                        // target="_blank"
                                         rel="noopener noreferrer"
                                         href="/location"
                                     >
@@ -465,7 +426,7 @@ const Cards = () => {
                     </div>
                 </div>
 
-                {/* Cards - Products: Grocery Stall, Buko Stall & Fish Stall - Mobile & Tablet */}
+                {/* Cards - Products: Grocery Stall & Fish Stall - Mobile & Tablet */}
                 <div className='md:mx-10 mx-5 block lg:hidden'>
                     <Carousel
                         opts={{
@@ -603,7 +564,6 @@ const Cards = () => {
                             {/* Blueprint - Mobile*/}
                             <div className="cursor-pointer">
                                 <Link
-                                    // target="_blank"
                                     rel="noopener noreferrer"
                                     href="/blueprint"
                                 >
@@ -615,7 +575,8 @@ const Cards = () => {
                                         className="rounded-t-2xl lg:hidden"
                                     />
                                 </Link>
-                            </div>
+                            </div>\
+                            
                             {/* Description */}
                             <div className="py-8 lg:py-36">
                                 <div className="pb-4">
@@ -695,9 +656,8 @@ const Cards = () => {
                                 {/* Button */}
                                 <div className="flex justify-center mt-4 mb-8">
                                     <Link
-                                        // target="_blank"
                                         rel="noopener noreferrer"
-                                        href="/"
+                                        href="/design"
                                     >
                                         <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">View Design</Button>
                                     </Link>
@@ -708,7 +668,6 @@ const Cards = () => {
                         {/* Floor Plan - Desktop */}
                         <div className="cursor-pointer">
                             <Link
-                                // target="_blank"
                                 rel="noopener noreferrer"
                                 href="/design"
                             >
@@ -732,7 +691,6 @@ const Cards = () => {
                             {/* DTI Registration - Mobile*/}
                             <div className="cursor-pointer">
                                 <Link
-                                    // target="_blank"
                                     rel="noopener noreferrer"
                                     href="/registration"
                                 >
@@ -762,7 +720,7 @@ const Cards = () => {
                                     <Link
                                         // target="_blank"
                                         rel="noopener noreferrer"
-                                        href="/"
+                                        href="/registration"
                                     >
                                         <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">See Registration</Button>
                                     </Link>
@@ -774,7 +732,6 @@ const Cards = () => {
                         {/* DTI Registration - Desktop*/}
                         <div className="cursor-pointer">
                             <Link
-                                // target="_blank"
                                 rel="noopener noreferrer"
                                 href="/registration"
                             >
@@ -782,7 +739,7 @@ const Cards = () => {
                                     src="/images/home/PamilyaMarket_Registration_compressed.png"
                                     width={1600}
                                     height={1600}
-                                    alt="dti-registartion"
+                                    alt="dti-registration"
                                     className="rounded-r-2xl hidden lg:block"
                                 />
                             </Link>
