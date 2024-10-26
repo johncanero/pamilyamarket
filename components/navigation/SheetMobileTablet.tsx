@@ -23,6 +23,7 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { FaRegRegistered } from "react-icons/fa6";
 import { MdArchitecture } from "react-icons/md";
 import { MdConnectWithoutContact } from "react-icons/md";
+import { MdOutlineLocalGroceryStore } from "react-icons/md";
 
 import { motion } from "framer-motion"
 
@@ -88,6 +89,19 @@ const SheetMobileTablet = () => {
                                     <div className='grid grid-cols-7 px-3 hover:bg-orange-200 hover:rounded-xl'>
                                         <TiHome size={24} className='text-amber-600' />
                                         <p className='text-lg'>Home</p>
+                                    </div>
+                                </SheetPrimitive.Close>
+                            </Link>
+
+                            {/* Products */}
+                            <Link
+                                href="/products"
+                                className={`active ${checkActivePath("/products") ? 'font-semibold text-amber-600' : ''}`}
+                            >
+                                <SheetPrimitive.Close>
+                                    <div className='grid grid-cols-7 py-3 px-3 hover:bg-orange-200 hover:rounded-xl'>
+                                        <MdOutlineLocalGroceryStore size={16} className='ml-1 mt-1 text-amber-600' />
+                                        <p className='text-lg'>Products</p>
                                     </div>
                                 </SheetPrimitive.Close>
                             </Link>
@@ -194,7 +208,7 @@ const SheetMobileTablet = () => {
                             }}
                         >
                             <p className="italic mt-12 text-black px-3">
-                                <span className="font-bold">Fairview's freshest! ‍</span>
+                                <span className="font-bold">Fairview's pinaka-sariwa! ‍</span>
                                 Nourish your family with quality meats, fish, veggies & more.
                             </p>
                         </motion.div>

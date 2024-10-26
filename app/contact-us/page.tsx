@@ -14,7 +14,7 @@ const page = () => {
             {/* For support */}
             <div className='mt-8'>
                 {/* Contact Form */}
-                <div className='lg:flex'>
+                <div className=''>
                     <p className='text-center text-zinc-800 font-normal text-lg lg:text-2xl'>For support regarding your Pamilya Market order or feedback in our public community market,</p>
                     <div className='flex justify-center'>
                         {/* Contact Form */}

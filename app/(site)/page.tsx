@@ -49,7 +49,7 @@ export default function Home() {
                 <Link
                   // target="_blank"
                   rel="noopener noreferrer"
-                  href="/"
+                  href="/products"
                 >
                   <Button className="text-lg rounded-full w-full py-8 px-14 font-semibold">Explore Products</Button>
                 </Link>

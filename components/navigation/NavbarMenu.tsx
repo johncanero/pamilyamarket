@@ -14,6 +14,7 @@ type NavigationItem = {
 }
 
 const navigation: NavigationItem[] = [
+    { href: '/products', name: 'Products' },
     { href: '/blueprint', name: 'Blueprint' },
     { href: '/design', name: 'Design' },
     { href: '/registration', name: 'Registration' },
