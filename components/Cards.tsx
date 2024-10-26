@@ -471,43 +471,6 @@ const Cards = () => {
                                         </button>
                                     </div>
                                 </div>
-
-
-                            </CarouselItem>
-
-                            {/* Buko Card */}
-                            <CarouselItem
-                                className="md:basis-1/2 lg:basis-1/4"
-                            >
-                                <div className="relative flex w-full lg:max-w-[26rem] max-w-[22rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700">
-
-                                    <div
-                                        className="relative overflow-hidden text-white shadow-lg rounded-t-2xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 cursor-pointer">
-
-                                        <Image
-                                            src="/images/home/card09-buko.png"
-                                            width={1000}
-                                            height={1000}
-                                            alt="buko-card-product" />
-
-                                        <div
-                                            className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-transparent via-transparent to-black/40">
-                                        </div>
-
-                                        <p
-                                            className="!absolute top-4 left-4 h-8 text-base max-h-[32px] max-w-[32px] select-none rounded-full text-center align-middle font-sans font-semibold text-white transition-all">
-                                            Buko
-                                        </p>
-                                    </div>
-
-                                    <div>
-                                        <button
-                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                            type="button">
-                                            Browse Buko Stall
-                                        </button>
-                                    </div>
-                                </div>
                             </CarouselItem>
 
                             {/* Fish Card */}
