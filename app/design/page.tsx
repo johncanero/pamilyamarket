@@ -16,7 +16,7 @@ const page = () => {
     return (
         <div>
             {/* Design Images */}
-            <div className='md:flex md:flex-wrap mb-16 mx-8 lg:mx-12'>
+            <div className='md:flex md:flex-wrap mb-16 mx-8 lg:mx-12 mx-auto'>
                 <Image
                     src="/images/design/exterior0-pamilyaMarket-compressed.png"
                     width={500}

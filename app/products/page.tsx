@@ -1,6 +1,7 @@
 import React from 'react'
 import type { Metadata } from "next";
 import Image from 'next/image'
+import MeatProducts from '@/components/products/MeatProducts';
 
 
 export const metadata: Metadata = {
@@ -14,16 +15,11 @@ export const metadata: Metadata = {
 
 const page = () => {
     return (
-        <div>
-            <div className="flex flex-col">
-                {/* Pamilya Market Logo */}
-                <Image
-                    src="/images/logo/pamilyaMarketLogo.png"
-                    width={350}
-                    height={350}
-                    alt="pamilya-market-logo"
-                    className="mx-auto lg:my-24 my-16 max-w-xs md:max-w-full"
-                />
+        <div className="flex flex-col">
+            <div className='mt-8 lg:mb-16 mx-auto'>
+                <div className='lg:w-[1000px]'>
+                    <MeatProducts />
+                </div>
             </div>
         </div>
     )
