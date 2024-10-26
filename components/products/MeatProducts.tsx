@@ -24,7 +24,7 @@ const Products = () => {
                     </TableRow>
                 </TableHeader>
                 <TableBody>
-                    {/* Whole Chicken */}
+
                     <TableRow>
                         <TableCell className="font-medium">Whole Chicken</TableCell>
                         <TableCell>Chicken</TableCell>
@@ -37,6 +37,11 @@ const Products = () => {
 
                     <TableRow>
                         <TableCell className="font-medium">Breast</TableCell>
+                        <TableCell>Chicken</TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell className="font-medium">Wings</TableCell>
                         <TableCell>Chicken</TableCell>
                     </TableRow>
                 </TableBody>
