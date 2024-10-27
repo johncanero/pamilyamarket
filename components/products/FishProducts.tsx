@@ -11,7 +11,7 @@ import {
 
 const FishProducts = () => {
     return (
-        <div>
+        <div className='my-8'>
             <h2 className='lg:text-xl mb-4 font-bold text-amber-600'>
                 Fish Products
             </h2>
