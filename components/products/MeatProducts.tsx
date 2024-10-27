@@ -9,7 +9,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
-const Products = () => {
+const MeatProducts = () => {
     return (
         <div>
             <h2 className='lg:text-xl mb-4 font-bold text-amber-600'>
@@ -179,4 +179,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default MeatProducts
