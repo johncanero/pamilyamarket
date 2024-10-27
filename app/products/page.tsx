@@ -1,7 +1,9 @@
 import React from 'react'
 import type { Metadata } from "next";
 import Image from 'next/image'
+
 import MeatProducts from '@/components/products/MeatProducts';
+import FishProducts from '@/components/products/FishProducts';
 
 
 export const metadata: Metadata = {
@@ -19,6 +21,7 @@ const page = () => {
             <div className='mt-8 mb-24 mx-auto'>
                 <div className='w-[300px] md:w-[600px] lg:w-[1000px]'>
                     <MeatProducts />
+                    <FishProducts />
                 </div>
             </div>
         </div>
