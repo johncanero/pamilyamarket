@@ -55,11 +55,16 @@ const Cards = () => {
 
                                 {/* Card - Meat Button */}
                                 <div>
-                                    <button
-                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                        type="button">
-                                        Browse Meat
-                                    </button>
+                                    <Link
+                                        rel="noopener noreferrer"
+                                        href="/products"
+                                    >
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Meat
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -133,11 +138,16 @@ const Cards = () => {
 
                                 {/* Card - Chicken Button */}
                                 <div>
-                                    <button
-                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                        type="button">
-                                        Browse Chicken
-                                    </button>
+                                    <Link
+                                        rel="noopener noreferrer"
+                                        href="/products"
+                                    >
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Chicken
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -266,11 +276,16 @@ const Cards = () => {
 
                                 {/* Card - Meat Button */}
                                 <div>
-                                    <button
-                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                        type="button">
-                                        Browse Meat
-                                    </button>
+                                    <Link
+                                        rel="noopener noreferrer"
+                                        href="/products"
+                                    >
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Meat
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -344,11 +359,16 @@ const Cards = () => {
 
                                 {/* Card - Chicken Button */}
                                 <div>
-                                    <button
-                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                        type="button">
-                                        Browse Chicken
-                                    </button>
+                                    <Link
+                                        rel="noopener noreferrer"
+                                        href="/products"
+                                    >
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Chicken
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -539,7 +559,7 @@ const Cards = () => {
                                     />
                                 </Link>
                             </div>\
-                            
+
                             {/* Description */}
                             <div className="py-8 lg:py-36">
                                 <div className="pb-4">
@@ -671,7 +691,7 @@ const Cards = () => {
                             <div className="py-8 lg:py-36">
                                 <div className="pb-4">
                                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white mt-4">
-                                        DTI Registration 
+                                        DTI Registration
                                     </h1>
                                     <p className="text-md lg:text-lg justify-start text-white mt-2 mx-8 md:mx-32 lg:mx-20 leading-relaxed">
                                         Located in Fairview, Quezon City, NCR - National Capital Region, Second District
