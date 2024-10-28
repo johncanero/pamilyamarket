@@ -83,6 +83,68 @@ const FishProducts = () => {
                         </TableRow>
                     </TableBody>
                 </Table>
+
+                {/* Fish Products - Set 2 */}
+                <Table className='mb-8'>
+                    <TableCaption>A list of fish products.</TableCaption>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead>Fish Item</TableHead>
+                            <TableHead>Category</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <TableRow>
+                            <TableCell className="font-medium">Gizzard Shad (Hiwas)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">Bigeye Scad (Matambaka)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">Spanish Mackerel (Hasa - Hasa)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">Indian Mackerel (Alumahan)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">Swordfish (Espada)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">Tilapia</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">Milkfish (Bangus)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">Mackerel Scad (Galunggong)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">Grouper (Lapu Lapu)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell className="font-medium">White Snapper (Bitilya)</TableCell>
+                            <TableCell>Fish</TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
             </div>
         </div>
     )
