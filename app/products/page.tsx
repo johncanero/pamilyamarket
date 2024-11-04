@@ -5,7 +5,7 @@ import Image from 'next/image'
 import MeatProducts from '@/components/products/MeatProducts';
 import FishProducts from '@/components/products/FishProducts';
 import VegetableProducts from '@/components/products/VegetableProducts';
-
+import OtherProducts from '@/components/products/OtherProducts';
 
 export const metadata: Metadata = {
     title: "Products | Pamilya Market",
@@ -24,6 +24,7 @@ const page = () => {
                     <MeatProducts />
                     <FishProducts />
                     <VegetableProducts />
+                    <OtherProducts />
                 </div>
             </div>
         </div>
