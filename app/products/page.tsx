@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import MeatProducts from '@/components/products/MeatProducts';
 import FishProducts from '@/components/products/FishProducts';
+import VegetableProducts from '@/components/products/VegetableProducts';
 
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ const page = () => {
                 <div className='w-[300px] md:w-[600px] lg:w-[1000px]'>
                     <MeatProducts />
                     <FishProducts />
+                    <VegetableProducts />
                 </div>
             </div>
         </div>
