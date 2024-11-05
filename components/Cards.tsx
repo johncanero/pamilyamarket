@@ -100,11 +100,16 @@ const Cards = () => {
 
                                 {/* Card - Vegetables Button */}
                                 <div>
-                                    <button
-                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                        type="button">
-                                        Browse Vegetables
-                                    </button>
+                                    <Link
+                                        rel="noopener noreferrer"
+                                        href="/products"
+                                    >
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Vegetables
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </CarouselItem>
@@ -186,7 +191,7 @@ const Cards = () => {
                                     <button
                                         className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                         type="button">
-                                        Browse Grocery Stall
+                                        Grocery Stall
                                     </button>
                                 </div>
                             </div>
@@ -324,11 +329,16 @@ const Cards = () => {
 
                                 {/* Card - Vegetables Button */}
                                 <div>
-                                    <button
-                                        className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                                        type="button">
-                                        Browse Vegetables
-                                    </button>
+                                    <Link
+                                        rel="noopener noreferrer"
+                                        href="/products"
+                                    >
+                                        <button
+                                            className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                            type="button">
+                                            Browse Vegetables
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </CarouselItem>
@@ -485,7 +495,7 @@ const Cards = () => {
                                         </p>
                                     </div>
 
-                                    {/* Card - Grocery Button */}
+                                    {/* Card - Fish Button */}
                                     <div>
                                         <Link
                                             rel="noopener noreferrer"
@@ -533,7 +543,7 @@ const Cards = () => {
                                         <button
                                             className="block w-full select-none rounded-b-xl bg-amber-400 py-3.5 px-7 text-center align-middle font-sans text-lg font-bold  text-amber-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                                             type="button">
-                                            Browse Grocery Stall
+                                            Grocery Stall
                                         </button>
                                     </div>
                                 </div>
